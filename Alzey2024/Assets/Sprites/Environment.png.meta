@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 91928cd8a2505914aa7f4268f21e443f
+guid: 97aabeff3f083914dbc501aad5acf06f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -10,7 +10,7 @@ TextureImporter:
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
-    borderMipMap: 0
+    borderMipMap: 1
     mipMapsPreserveCoverage: 0
     alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
@@ -44,7 +44,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerStrawberry_0
+      name: Environment_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,83 +105,62 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69d56d11fdc18d94582826611d526f46
-      internalID: -1277016199
+      spriteID: 7997daf0340f86d4da962711a68ee069
+      internalID: 706434123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerStrawberry_1
+      name: Environment_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 935edeb937a0a3f49a4189e4a0cc3b94
-      internalID: -291379007
+      spriteID: c1d0944f46beb9b4b820dd0204627610
+      internalID: -1832526009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerStrawberry_2
+      name: Environment_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 64
+        y: 64
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4856d61c59e8def4e9772188302cdbe7
-      internalID: -1322468204
+      spriteID: d36fc4ab17809cf4e906f04f8961a184
+      internalID: 295682758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerStrawberry_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a549d75bdbf154488d2f93932d185de
-      internalID: -566183753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerStrawberry_4
+      name: Environment_3
       rect:
         serializedVersion: 2
         x: 0
@@ -189,77 +168,119 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f170aafa8cd53ac428738f474ba8e11d
-      internalID: 836595789
+      spriteID: e7ac3020f2af13745a818dd9780637fb
+      internalID: -476197929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerStrawberry_5
+      name: Environment_4
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 771c3139b07e9db43aa955365cfa3e02
-      internalID: 1285941122
+      spriteID: 1272164a113a6c44b92960def71a229b
+      internalID: -700559532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerStrawberry_6
+      name: Environment_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155e49f998c08c8498d004b750ddefc3
+      internalID: 1425036204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c5c0bb9ade4b394b839a1b0a55ea08b
-      internalID: -928192902
+      spriteID: fd4abb05936828844a54c934402dab4f
+      internalID: 1687276170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerStrawberry_7
+      name: Environment_7
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04d9769b48d367c4887bf24080305835
-      internalID: 439086148
+      spriteID: 8ba75c00ea9b7a44684acdc139bd7b61
+      internalID: 1623263243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Environment_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299d86f1ff30a444d989a0de3fa29fa8
+      internalID: 778783471
       vertices: []
       indices: 
       edges: []
@@ -275,14 +296,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerStrawberry_0: -1277016199
-      PlayerStrawberry_1: -291379007
-      PlayerStrawberry_2: -1322468204
-      PlayerStrawberry_3: -566183753
-      PlayerStrawberry_4: 836595789
-      PlayerStrawberry_5: 1285941122
-      PlayerStrawberry_6: -928192902
-      PlayerStrawberry_7: 439086148
+      Environment_0: 706434123
+      Environment_1: -1832526009
+      Environment_2: 295682758
+      Environment_3: -476197929
+      Environment_4: -700559532
+      Environment_5: 1425036204
+      Environment_6: 1687276170
+      Environment_7: 1623263243
+      Environment_8: 778783471
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
