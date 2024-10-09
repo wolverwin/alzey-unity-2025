@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour {
 
+    /// <summary>
+    /// The rigidbody of the player
+    /// </summary>
+    [SerializeField]
+    Rigidbody2D body;
+
     [Header("Movement")]
     /// <summary>
     /// The movement speed of the player
@@ -48,19 +54,6 @@ public class MovementController : MonoBehaviour {
     [SerializeField]
     float fallSpeedMultiplier = 2;
 
-    [Header("WallCheck")]
-    /// <summary>
-    /// All transforms to check if the player touches a wall
-    /// </summary>
-    [SerializeField]
-    Transform wallCheck;
-
-    /// <summary>
-    /// The size of the wall check box to check for
-    /// </summary>
-    [SerializeField]
-    Vector2 wallCheckSize;
-
     /// <summary>
     /// The horizontal movement from the input system
     /// </summary>
@@ -92,11 +85,6 @@ public class MovementController : MonoBehaviour {
     bool facingRight = true;
 
     /// <summary>
-    /// The rigidbody of the player
-    /// </summary>
-    Rigidbody2D body;
-
-    /// <summary>
     /// The current velocity of the player
     /// </summary>
     Vector2 currentVelocity = Vector2.zero;
@@ -106,14 +94,16 @@ public class MovementController : MonoBehaviour {
     /// </summary>
     const float MOVEMENT_MULTIPLIER = 10f;
 
-    const float MIN_FALL_VELOCITY = -0.005f;
+    public const float MIN_VERTICAL_VELOCITY = 0.005f;
 
     void Start() {
-        body = GetComponent<Rigidbody2D>();
         baseGravity = body.gravityScale;
     }
 
     void Update() {
+        DoGroundCheck();
+        ApplyFallGravity();
+
         horizontalMovement = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump")) {
@@ -127,15 +117,19 @@ public class MovementController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        DoGroundCheck();
-        DoWallCheck();
-        ApplyFallGravity();
-        
         // Calculate new velocity and apply it to the rigidbody
         Vector2 targetVelocity = new Vector2(horizontalMovement * MOVEMENT_MULTIPLIER * speed * Time.fixedDeltaTime, body.velocity.y);
         body.velocity = Vector2.SmoothDamp(body.velocity, targetVelocity, ref currentVelocity, 0.05f);
 
-        if (jump && (grounded || onWall)) {
+        Jump();
+    }
+
+    void Jump() {
+        if (jump == false) {
+            return;
+        }
+
+        if (grounded && !onWall) {
             body.AddForce(new Vector2(0, jumpForce));
         }
 
@@ -156,19 +150,10 @@ public class MovementController : MonoBehaviour {
     }
 
     /// <summary>
-    /// Checks if the character is sliding on a wall
+    /// Applies fall gravity if the character is falling
     /// </summary>
-    void DoWallCheck() {
-        onWall = false;
-
-        Collider2D collider2d = Physics2D.OverlapBox(wallCheck.position, wallCheckSize, 0, whatIsGround);
-        if (!grounded && collider2d != null && collider2d.gameObject != gameObject) {
-            onWall = true;
-        }
-    }
-
     void ApplyFallGravity() {
-        if (body.velocity.y < MIN_FALL_VELOCITY) {
+        if (body.velocity.y < -MIN_VERTICAL_VELOCITY) {
             body.gravityScale = baseGravity * fallSpeedMultiplier;
             body.velocity = new Vector2(body.velocity.x, Mathf.Max(body.velocity.y, -maxFallSpeed));
 
@@ -181,20 +166,14 @@ public class MovementController : MonoBehaviour {
     /// Flip the player asset on the x-axis
     /// </summary>
     void Flip() {
-        if (facingRight) {
-            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
-            facingRight = false;
-        } else {
-            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
-            facingRight = true;
-        }
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+        facingRight = !facingRight;
     }
 
     void OnDrawGizmosSelected() {
         Gizmos.color = Color.white;
         Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
-
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(wallCheck.position, wallCheckSize);
     }
 }
