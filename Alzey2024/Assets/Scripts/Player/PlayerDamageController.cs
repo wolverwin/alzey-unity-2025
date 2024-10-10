@@ -1,5 +1,4 @@
 using Manager;
-using System;
 using UnityEngine;
 
 namespace Player {
@@ -51,7 +50,6 @@ namespace Player {
         /// <summary>
         /// Adds the given damage to the player damage
         /// </summary>
-        /// <param name="damage"></param>
         void HurtPlayer() {
             GameManager.Instance.Damage += damagePerHurt;
             hurtTimer = hurtTime;
@@ -60,7 +58,6 @@ namespace Player {
         }
 
         private void OnTriggerStay2D(Collider2D collision) {
-            Debug.Log("In trigger!");
             if (invincibleTimer <= 0 && collision.gameObject.CompareTag("Trap")) {
                 EventManager.InvokeOnPlayerHurt();
             }
