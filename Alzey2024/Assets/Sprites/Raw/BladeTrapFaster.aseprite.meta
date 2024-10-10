@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 795e7d37d2293b44fbb729d523e8a845
+guid: a0a993f4fafdd7648a82c3d23b072679
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,107 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: PlayerStrawberry_Frame_0
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 52
-      width: 14
-      height: 15
-    spriteID: 34f840fa804dddd48b36b43eacc89c70
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 52}
-  - name: PlayerStrawberry_Frame_6
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 95
-      width: 12
-      height: 16
-    spriteID: bab92c90a8062bd46a379823080d4f77
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 26, y: 95}
-  - name: PlayerStrawberry_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 75
-      width: 14
-      height: 15
-    spriteID: 86289968cdaeb874e9cabcbfb51a0358
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 75}
-  - name: PlayerStrawberry_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 98
-      width: 14
-      height: 15
-    spriteID: 06c82b6b2bd4e5c40a0eecc03799425a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 98}
-  - name: PlayerStrawberry_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 4
-      width: 14
-      height: 15
-    spriteID: bda5c2696be5be2419170bd2830b1fd6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 26, y: 4}
-  - name: PlayerStrawberry_Frame_4
+  - name: BladeTrapFaster_Frame_0
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -230,9 +130,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 14
-      height: 16
-    spriteID: e3db9f5f88f2f484dad6ad0e3ebadb46
+      width: 16
+      height: 7
+    spriteID: 856ed78c448a5124cae2ebd560a8861b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -241,58 +141,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: PlayerStrawberry_Frame_5
+  - name: BladeTrapFaster_Frame_1
     originalName: 
     pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 27
-      width: 14
-      height: 15
-    spriteID: 6647941760107d14498981f9289f7a8e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 26, y: 27}
-  - name: PlayerStrawberry_Frame_7
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 50
-      width: 14
-      height: 15
-    spriteID: b5b454891a6ebcc4bacb46df8738b9c8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 26, y: 50}
-  - name: PlayerStrawberry_Frame_8
-    originalName: 
-    pivot: {x: 0.53333336, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 48
-      y: 4
-      width: 15
-      height: 14
-    spriteID: 44a2848f99defe74f9d6b3733c29efb5
+      y: 19
+      width: 12
+      height: 7
+    spriteID: 363bea7bd4329364c8a1728b044e939f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -300,8 +160,28 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 4}
-  - name: PlayerStrawberry_Frame_9
+    uvTransform: {x: 48, y: 19}
+  - name: BladeTrapFaster_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 4
+      width: 8
+      height: 7
+    spriteID: c28570ae8b906074296162927142e40a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 4}
+  - name: BladeTrapFaster_Frame_3
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -309,10 +189,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 28
-      width: 14
-      height: 16
-    spriteID: 21313be10e5004d409398eae9cf82c4b
+      y: 49
+      width: 8
+      height: 7
+    spriteID: acb2e6d80173ccc4abea91a9f18f809e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -320,19 +200,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 28}
-  - name: PlayerStrawberry_Frame_10
+    uvTransform: {x: 4, y: 49}
+  - name: BladeTrapFaster_Frame_4
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 48
-      y: 26
-      width: 12
-      height: 16
-    spriteID: a130ce34858d16a439787e672969ae04
+      x: 24
+      y: 34
+      width: 10
+      height: 7
+    spriteID: 3135b16bf6b51f34cbcfcfeac450cbb1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -340,8 +220,28 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 26}
-  - name: PlayerStrawberry_Frame_11
+    uvTransform: {x: 24, y: 34}
+  - name: BladeTrapFaster_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 19
+      width: 14
+      height: 7
+    spriteID: 99e79a5a1a4a41b40aeecb58fa2d461d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 19}
+  - name: BladeTrapFaster_Frame_6
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -349,10 +249,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 26
-      y: 73
+      y: 19
       width: 14
-      height: 14
-    spriteID: 456338a295de8a849bb556dbc0d8fb8e
+      height: 7
+    spriteID: 2e2b557602bc2ff4da6167a26bafadab
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -360,124 +260,224 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 26, y: 73}
+    uvTransform: {x: 26, y: 19}
+  - name: BladeTrapFaster_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 34
+      width: 10
+      height: 7
+    spriteID: cf0e9dfaa829ac54dbde3c07072f30d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 34}
+  - name: BladeTrapFaster_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 49
+      width: 8
+      height: 7
+    spriteID: 5a0172034e04d74438c9fc96cdc12922
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 20, y: 49}
+  - name: BladeTrapFaster_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 49
+      width: 8
+      height: 7
+    spriteID: 99dbabb0edb28a44e97ceb30bf468366
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 49}
+  - name: BladeTrapFaster_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 34
+      width: 12
+      height: 7
+    spriteID: 005e73bf094b15340a55aea8c9d95742
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 34}
+  - name: BladeTrapFaster_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 4
+      width: 16
+      height: 7
+    spriteID: dddb55960b1e93a4d95adeb56a4ae2ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 50938062
-    name: PlayerStrawberry
+    guid: 1410441110
+    name: BladeTrapFaster
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: PlayerStrawberry_Frame_0
+    - name: BladeTrapFaster_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 0
         y: 0
-        width: 14
-        height: 15
-      spriteId: 34f840fa804dddd48b36b43eacc89c70
-    - name: PlayerStrawberry_Frame_1
+        width: 16
+        height: 7
+      spriteId: 856ed78c448a5124cae2ebd560a8861b
+    - name: BladeTrapFaster_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
         x: 2
         y: 0
         width: 12
-        height: 16
-      spriteId: bab92c90a8062bd46a379823080d4f77
-    - name: PlayerStrawberry_Frame_2
+        height: 7
+      spriteId: 363bea7bd4329364c8a1728b044e939f
+    - name: BladeTrapFaster_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 4
         y: 0
-        width: 14
-        height: 15
-      spriteId: 86289968cdaeb874e9cabcbfb51a0358
-    - name: PlayerStrawberry_Frame_3
+        width: 8
+        height: 7
+      spriteId: c28570ae8b906074296162927142e40a
+    - name: BladeTrapFaster_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 4
         y: 0
-        width: 14
-        height: 15
-      spriteId: 06c82b6b2bd4e5c40a0eecc03799425a
-    - name: PlayerStrawberry_Frame_4
+        width: 8
+        height: 7
+      spriteId: acb2e6d80173ccc4abea91a9f18f809e
+    - name: BladeTrapFaster_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 3
         y: 0
-        width: 14
-        height: 15
-      spriteId: bda5c2696be5be2419170bd2830b1fd6
-    - name: PlayerStrawberry_Frame_5
+        width: 10
+        height: 7
+      spriteId: 3135b16bf6b51f34cbcfcfeac450cbb1
+    - name: BladeTrapFaster_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
         x: 1
         y: 0
         width: 14
-        height: 16
-      spriteId: e3db9f5f88f2f484dad6ad0e3ebadb46
-    - name: PlayerStrawberry_Frame_6
+        height: 7
+      spriteId: 99e79a5a1a4a41b40aeecb58fa2d461d
+    - name: BladeTrapFaster_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
         x: 1
         y: 0
         width: 14
-        height: 15
-      spriteId: 6647941760107d14498981f9289f7a8e
-    - name: PlayerStrawberry_Frame_7
+        height: 7
+      spriteId: 2e2b557602bc2ff4da6167a26bafadab
+    - name: BladeTrapFaster_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 3
         y: 0
-        width: 14
-        height: 15
-      spriteId: b5b454891a6ebcc4bacb46df8738b9c8
-    - name: PlayerStrawberry_Frame_8
+        width: 10
+        height: 7
+      spriteId: cf0e9dfaa829ac54dbde3c07072f30d1
+    - name: BladeTrapFaster_Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
-        x: 0
+        x: 4
         y: 0
-        width: 15
-        height: 14
-      spriteId: 44a2848f99defe74f9d6b3733c29efb5
-    - name: PlayerStrawberry_Frame_9
+        width: 8
+        height: 7
+      spriteId: 5a0172034e04d74438c9fc96cdc12922
+    - name: BladeTrapFaster_Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 4
         y: 0
-        width: 14
-        height: 16
-      spriteId: 21313be10e5004d409398eae9cf82c4b
-    - name: PlayerStrawberry_Frame_10
+        width: 8
+        height: 7
+      spriteId: 99dbabb0edb28a44e97ceb30bf468366
+    - name: BladeTrapFaster_Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
         x: 2
         y: 0
         width: 12
-        height: 16
-      spriteId: a130ce34858d16a439787e672969ae04
-    - name: PlayerStrawberry_Frame_11
+        height: 7
+      spriteId: 005e73bf094b15340a55aea8c9d95742
+    - name: BladeTrapFaster_Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 0
         y: 0
-        width: 14
-        height: 14
-      spriteId: 456338a295de8a849bb556dbc0d8fb8e
+        width: 16
+        height: 7
+      spriteId: dddb55960b1e93a4d95adeb56a4ae2ab
     linkedCells: []
     parentIndex: -1
   platformSettings: []

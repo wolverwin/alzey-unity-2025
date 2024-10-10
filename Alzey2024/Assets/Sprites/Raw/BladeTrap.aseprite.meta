@@ -149,7 +149,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 19
+      y: 49
       width: 14
       height: 7
     spriteID: 40b1eee159e8dd04f885b66bc5fc5a88
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 19}
+    uvTransform: {x: 4, y: 49}
   - name: BladeTrap_Frame_2
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -168,8 +168,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 48
-      y: 19
+      x: 4
+      y: 109
       width: 12
       height: 7
     spriteID: 45741e379b39e7a4d9653519761b79f6
@@ -180,7 +180,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 19}
+    uvTransform: {x: 4, y: 109}
   - name: BladeTrap_Frame_3
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -188,8 +188,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
-      y: 34
+      x: 28
+      y: 49
       width: 10
       height: 7
     spriteID: e4046b865a8d9a24a9a15eb9c02eff17
@@ -200,7 +200,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 34}
+    uvTransform: {x: 28, y: 49}
   - name: BladeTrap_Frame_4
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -208,8 +208,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 52
-      y: 4
+      x: 28
+      y: 109
       width: 8
       height: 7
     spriteID: 1c034f3f4f1069f47a223a2dd1b5e5e6
@@ -220,7 +220,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 52, y: 4}
+    uvTransform: {x: 28, y: 109}
   - name: BladeTrap_Frame_5
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -228,8 +228,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 49
+      x: 48
+      y: 4
       width: 8
       height: 7
     spriteID: d0a89b5d78448724db380e6e1a52025e
@@ -240,7 +240,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 49}
+    uvTransform: {x: 48, y: 4}
   - name: BladeTrap_Frame_6
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -248,8 +248,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 20
-      y: 49
+      x: 48
+      y: 19
       width: 8
       height: 7
     spriteID: 1ccc820f6bcfd9e4f85959aae7b90f13
@@ -260,7 +260,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 20, y: 49}
+    uvTransform: {x: 48, y: 19}
   - name: BladeTrap_Frame_7
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -268,8 +268,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 36
-      y: 49
+      x: 48
+      y: 34
       width: 8
       height: 7
     spriteID: 92d7d976640103b4cb6b55ae764d74ca
@@ -280,7 +280,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 36, y: 49}
+    uvTransform: {x: 48, y: 34}
   - name: BladeTrap_Frame_8
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -288,8 +288,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 42
-      y: 34
+      x: 28
+      y: 64
       width: 10
       height: 7
     spriteID: 01ceb98257d5d4b448b6d4244b99daea
@@ -300,7 +300,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 42, y: 34}
+    uvTransform: {x: 28, y: 64}
   - name: BladeTrap_Frame_9
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -308,8 +308,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 34
+      x: 28
+      y: 4
       width: 12
       height: 7
     spriteID: 0a376d8feab0e6144aa2de4ca68a2c40
@@ -320,7 +320,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 34}
+    uvTransform: {x: 28, y: 4}
   - name: BladeTrap_Frame_10
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -328,8 +328,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 19
+      x: 4
+      y: 64
       width: 14
       height: 7
     spriteID: b6c8843fa152d0d468997d2a473a3c79
@@ -340,7 +340,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 26, y: 19}
+    uvTransform: {x: 4, y: 64}
   - name: BladeTrap_Frame_11
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -348,8 +348,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 28
-      y: 4
+      x: 4
+      y: 19
       width: 16
       height: 7
     spriteID: 185c8ce64b0db4446a1a6d8419300138
@@ -360,7 +360,227 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 28, y: 4}
+    uvTransform: {x: 4, y: 19}
+  - name: BladeTrap_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 79
+      width: 14
+      height: 7
+    spriteID: adc8ec6882eab6f4784528e02108d3fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 79}
+  - name: BladeTrap_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 19
+      width: 12
+      height: 7
+    spriteID: a585c74ee1288474186c02547451ba8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 19}
+  - name: BladeTrap_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 79
+      width: 10
+      height: 7
+    spriteID: ce457eb36eae1f14b97b321a64ed3f61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 79}
+  - name: BladeTrap_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 49
+      width: 8
+      height: 7
+    spriteID: 803ea94b6c1017b46b79ff15e41f0701
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 49}
+  - name: BladeTrap_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 64
+      width: 8
+      height: 7
+    spriteID: 570e454d48164934e832318e2fdac242
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 64}
+  - name: BladeTrap_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 79
+      width: 8
+      height: 7
+    spriteID: 30e8bca65b7fc114899e139070fa348b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 79}
+  - name: BladeTrap_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 94
+      width: 8
+      height: 7
+    spriteID: 83c78b53856340f4396e60c668257325
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 94}
+  - name: BladeTrap_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 94
+      width: 10
+      height: 7
+    spriteID: d8f50ec854fbb5b49807e33d221824d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 94}
+  - name: BladeTrap_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 34
+      width: 12
+      height: 7
+    spriteID: 97c04db92a8c39247b264484589cd291
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 34}
+  - name: BladeTrap_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 94
+      width: 14
+      height: 7
+    spriteID: 1273938a9402e134db672fef648e9ded
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 94}
+  - name: BladeTrap_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 34
+      width: 16
+      height: 7
+    spriteID: 5701da1f7521ed94898daffad2b57878
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 34}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -478,6 +698,105 @@ ScriptedImporter:
         width: 16
         height: 7
       spriteId: 185c8ce64b0db4446a1a6d8419300138
+    - name: BladeTrap_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 1
+        y: 0
+        width: 14
+        height: 7
+      spriteId: adc8ec6882eab6f4784528e02108d3fa
+    - name: BladeTrap_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 7
+      spriteId: a585c74ee1288474186c02547451ba8c
+    - name: BladeTrap_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 3
+        y: 0
+        width: 10
+        height: 7
+      spriteId: ce457eb36eae1f14b97b321a64ed3f61
+    - name: BladeTrap_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 4
+        y: 0
+        width: 8
+        height: 7
+      spriteId: 803ea94b6c1017b46b79ff15e41f0701
+    - name: BladeTrap_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 4
+        y: 0
+        width: 8
+        height: 7
+      spriteId: 570e454d48164934e832318e2fdac242
+    - name: BladeTrap_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 4
+        y: 0
+        width: 8
+        height: 7
+      spriteId: 30e8bca65b7fc114899e139070fa348b
+    - name: BladeTrap_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 4
+        y: 0
+        width: 8
+        height: 7
+      spriteId: 83c78b53856340f4396e60c668257325
+    - name: BladeTrap_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 3
+        y: 0
+        width: 10
+        height: 7
+      spriteId: d8f50ec854fbb5b49807e33d221824d9
+    - name: BladeTrap_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 7
+      spriteId: 97c04db92a8c39247b264484589cd291
+    - name: BladeTrap_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 1
+        y: 0
+        width: 14
+        height: 7
+      spriteId: 1273938a9402e134db672fef648e9ded
+    - name: BladeTrap_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 7
+      spriteId: 5701da1f7521ed94898daffad2b57878
     linkedCells: []
     parentIndex: -1
   platformSettings: []

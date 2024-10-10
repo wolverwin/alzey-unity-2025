@@ -8,7 +8,24 @@ namespace Player {
         Rigidbody2D body;
 
         [SerializeField]
+        SpriteRenderer spriteRenderer;
+
+        [SerializeField]
         Animator animator;
+
+        [SerializeField, Range(0, 1)]
+        float invincibleAlpha = 0.5f;
+
+        float initialAlpha;
+
+        void Start() {
+            initialAlpha = spriteRenderer.color.a;
+
+            EventManager.OnPlayerHurt += TriggerHurtAnimation;
+            EventManager.OnPlayerRecovered += StopHurtAnimation;
+            EventManager.OnPlayerInvincible += OnPlayerInvincible;
+            EventManager.OnPlayerNotInvincible += OnPlayerNotInvincible;
+        }
 
         void Update() {
             animator.SetFloat("Speed", Mathf.Abs(body.velocity.x));
@@ -24,6 +41,26 @@ namespace Player {
 
             animator.SetBool("Jumping", isJumping);
             animator.SetBool("Falling", isFalling);
+        }
+
+        void TriggerHurtAnimation() {
+            animator.SetBool("Hurt", true);
+        }
+
+        void StopHurtAnimation() {
+            animator.SetBool("Hurt", false);
+        }
+
+        void OnPlayerInvincible() {
+            Color spriteColor = spriteRenderer.color;
+            spriteColor.a = invincibleAlpha;
+            spriteRenderer.color = spriteColor;
+        }
+
+        void OnPlayerNotInvincible() {
+            Color spriteColor = spriteRenderer.color;
+            spriteColor.a = initialAlpha;
+            spriteRenderer.color = spriteColor;
         }
     }
 }

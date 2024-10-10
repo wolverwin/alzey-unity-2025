@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Manager {
@@ -16,6 +17,32 @@ namespace Manager {
         }
 
         UIManager uiManager;
+
+        /// <summary>
+        /// The base health of the player
+        /// </summary>
+        [SerializeField]
+        int baseHealth = 3;
+
+        public int BaseHealth {
+            get {
+                return baseHealth;
+            }
+        }
+
+        /// <summary>
+        /// The current damage of the player
+        /// </summary>
+        int damage;
+
+        public int Damage {
+            get {
+                return damage;
+            }
+            set {
+                damage = value;
+            }
+        }
 
         /// <summary>
         /// The count of items collected by the player

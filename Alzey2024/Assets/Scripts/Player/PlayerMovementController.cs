@@ -55,10 +55,22 @@ namespace Player {
         [SerializeField]
         float fallSpeedMultiplier = 2;
 
+        [Header("Misc")]
+        /// <summary>
+        /// The force applied to the player if getting hurt
+        /// </summary>
+        [SerializeField]
+        float damageJumpForce = 200;
+
         /// <summary>
         /// The horizontal movement from the input system
         /// </summary>
         float horizontalMovement;
+
+        /// <summary>
+        /// If true, all controls are blocked
+        /// </summary>
+        bool blockControls;
 
         /// <summary>
         /// Whether the player should jump in the next fixed update or not
@@ -99,16 +111,20 @@ namespace Player {
 
         void Start() {
             baseGravity = body.gravityScale;
+            EventManager.OnPlayerHurt += OnPlayerHurt;
+            EventManager.OnPlayerRecovered += OnPlayerRecovered;
         }
 
         void Update() {
             DoGroundCheck();
             ApplyFallGravity();
 
-            horizontalMovement = Input.GetAxisRaw("Horizontal");
+            if (!blockControls) {
+                horizontalMovement = Input.GetAxisRaw("Horizontal");
 
-            if (Input.GetButtonDown("Jump")) {
-                jump = true;
+                if (Input.GetButtonDown("Jump")) {
+                    jump = true;
+                }
             }
 
             // Flip the player asset if needed
@@ -171,6 +187,23 @@ namespace Player {
             scale.x *= -1;
             transform.localScale = scale;
             facingRight = !facingRight;
+        }
+
+        /// <summary>
+        /// Triggered when the player gets hurt
+        /// </summary>
+        void OnPlayerHurt() {
+            // Make the player jump when getting hurt
+            body.AddForce(new Vector2(0, damageJumpForce));
+            blockControls = true;
+        }
+
+        /// <summary>
+        /// Triggered when the player recovered
+        /// </summary>
+        void OnPlayerRecovered() {
+            blockControls = false;
+            
         }
 
         void OnDrawGizmosSelected() {
