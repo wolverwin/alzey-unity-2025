@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1076114086114581523}
   - component: {fileID: 5318255912797279148}
+  - component: {fileID: 3236998429639812397}
   m_Layer: 0
   m_Name: SugarCube
   m_TagString: Collectable
@@ -78,6 +79,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75375456, y: 0.87612194}
   m_EdgeRadius: 0
+--- !u!114 &3236998429639812397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6619491566924796082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c70f5db29c9924ca5ad3517bc51b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationController: {fileID: 2099115697770657624}
 --- !u!1 &6730176464853658541
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +103,7 @@ GameObject:
   - component: {fileID: 3674871215418475590}
   - component: {fileID: 19459746947643311}
   - component: {fileID: 2636762739654289629}
+  - component: {fileID: 2099115697770657624}
   m_Layer: 0
   m_Name: SugarCube
   m_TagString: Untagged
@@ -184,3 +199,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2099115697770657624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6730176464853658541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58c3888ad5b687241b76526261772166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 3236998429639812397}
+  animator: {fileID: 2636762739654289629}
