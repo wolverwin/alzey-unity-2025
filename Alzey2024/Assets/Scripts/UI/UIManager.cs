@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Manager {
     public class UIManager : MonoBehaviour {
@@ -17,16 +18,43 @@ namespace Manager {
         }
 
         [SerializeField]
+        GameObject pauseMenu;
+
+        [SerializeField]
+        GameObject endScreen;
+
         List<UIController> uiController;
 
         void Awake() {
             instance = this;
         }
 
+        void Start() {
+            uiController = new List<UIController>(GetComponentsInChildren<UIController>(true));
+        }
+
         public void UpdateUI() {
             for (int i = 0; i < uiController.Count; i++) {
                 uiController[i].UpdateUI();
             }
+        }
+
+        /// <summary>
+        /// Shows the pause menu
+        /// </summary>
+        public void TogglePauseMenu() {
+            if (endScreen.activeSelf) {
+                return;
+            }
+
+            pauseMenu.SetActive(!pauseMenu.activeSelf);
+        }
+
+        /// <summary>
+        /// Shows the end screen to restart the game
+        /// </summary>
+        public void ShowEndScreen() {
+            endScreen.SetActive(true);
         }
     }
 }

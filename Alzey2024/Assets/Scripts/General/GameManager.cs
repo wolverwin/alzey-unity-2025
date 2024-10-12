@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Manager {
     public class GameManager : MonoBehaviour {
@@ -42,6 +43,10 @@ namespace Manager {
             set {
                 damage = value;
                 uiManager.UpdateUI();
+
+                if (damage >= baseHealth) { 
+                    EndGame();
+                }
             }
         }
 
@@ -82,6 +87,24 @@ namespace Manager {
 
         void Start() {
             uiManager = UIManager.Instance;
+
+            Time.timeScale = 1;
+        }
+
+        /// <summary>
+        /// Ends the game
+        /// </summary>
+        void EndGame() {
+            Time.timeScale = 0;
+            uiManager.ShowEndScreen();
+        }
+
+
+        /// <summary>
+        /// Reloads the current scene
+        /// </summary>
+        public void Reload() {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
