@@ -41,6 +41,7 @@ namespace Manager {
             }
             set {
                 damage = value;
+                uiManager.UpdateUI();
             }
         }
 
