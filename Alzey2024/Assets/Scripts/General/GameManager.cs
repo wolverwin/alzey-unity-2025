@@ -128,11 +128,26 @@ namespace Manager {
         }
 
         /// <summary>
+        /// Restarts the game from the first level
+        /// </summary>
+        public void Restart() {
+            SceneManager.LoadScene(0);
+        }
+
+        /// <summary>
         /// Finishes the level and either shows the end screen or starts the next level
         /// </summary>
         public void FinishLevel() {
-            Time.timeScale = 0;
-            uiManager.ShowWinScreen();
+            int nextLevelIndex = SceneManager.GetActiveScene().buildIndex + 1;
+
+            // No next level, end the game here
+            if (nextLevelIndex >= SceneManager.sceneCountInBuildSettings) {
+                Time.timeScale = 0;
+                uiManager.ShowWinScreen();
+                return;
+            }
+
+            SceneManager.LoadScene(nextLevelIndex);
         }
 
         /// <summary>
