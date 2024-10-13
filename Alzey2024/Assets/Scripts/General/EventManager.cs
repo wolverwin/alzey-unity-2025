@@ -1,6 +1,17 @@
 using System;
 
 public static class EventManager {
+    
+    /// <summary>
+    /// Resets all events
+    /// </summary>
+    public static void Reset() {
+        OnPlayerHurt = null;
+        OnPlayerRecovered = null;
+        OnPlayerInvincible = null;
+        OnPlayerNotInvincible = null;
+    }
+    
     /// <summary>
     /// Event triggered when the Player gets hurt
     /// </summary>

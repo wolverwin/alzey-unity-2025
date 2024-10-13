@@ -86,9 +86,17 @@ namespace Manager {
         }
 
         void Start() {
+            EventManager.Reset();
             uiManager = UIManager.Instance;
 
             Time.timeScale = 1;
+        }
+
+        /// <summary>
+        /// Reloads the current scene
+        /// </summary>
+        public void Reload() {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         /// <summary>
@@ -97,14 +105,6 @@ namespace Manager {
         void EndGame() {
             Time.timeScale = 0;
             uiManager.ShowEndScreen();
-        }
-
-
-        /// <summary>
-        /// Reloads the current scene
-        /// </summary>
-        public void Reload() {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
