@@ -1,3 +1,4 @@
+using Manager;
 using UnityEngine;
 
 namespace Player {
@@ -187,6 +188,8 @@ namespace Player {
             scale.x *= -1;
             transform.localScale = scale;
             facingRight = !facingRight;
+
+            EventManager.InvokeOnCharacterFlip();
         }
 
         /// <summary>
