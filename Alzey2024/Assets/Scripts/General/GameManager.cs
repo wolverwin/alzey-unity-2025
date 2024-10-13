@@ -63,6 +63,10 @@ namespace Manager {
             set { 
                 itemsCollected = value;
                 uiManager.UpdateUI();
+
+                if (itemsCollected >= itemCount) {
+                    EventManager.InvokeOnRequirementsFulfilled();
+                }
             }
         }
 
@@ -81,6 +85,17 @@ namespace Manager {
             }
         }
 
+        /// <summary>
+        /// Whether the game is paused or not
+        /// </summary>
+        bool gamePaused;
+
+        public bool GamePaused {
+            get {
+                return gamePaused; 
+            } 
+        }
+
         void Awake() {
             instance = this;
         }
@@ -92,6 +107,19 @@ namespace Manager {
             Time.timeScale = 1;
         }
 
+        void Update() {
+            if (Input.GetButtonDown("Cancel")) {
+                gamePaused = !gamePaused;
+                uiManager.TogglePauseMenu();
+
+                if (gamePaused) {
+                    Time.timeScale = 0;
+                } else {
+                    Time.timeScale = 1;
+                }
+            }
+        }
+
         /// <summary>
         /// Reloads the current scene
         /// </summary>
@@ -100,11 +128,19 @@ namespace Manager {
         }
 
         /// <summary>
+        /// Finishes the level and either shows the end screen or starts the next level
+        /// </summary>
+        public void FinishLevel() {
+            Time.timeScale = 0;
+            uiManager.ShowWinScreen();
+        }
+
+        /// <summary>
         /// Ends the game
         /// </summary>
         void EndGame() {
             Time.timeScale = 0;
-            uiManager.ShowEndScreen();
+            uiManager.ShowLoseScreen();
         }
     }
 }

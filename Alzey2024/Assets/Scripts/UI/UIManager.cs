@@ -21,7 +21,10 @@ namespace Manager {
         GameObject pauseMenu;
 
         [SerializeField]
-        GameObject endScreen;
+        GameObject winScreen;
+
+        [SerializeField]
+        GameObject loseScreen;
 
         List<UIController> uiController;
 
@@ -43,7 +46,7 @@ namespace Manager {
         /// Shows the pause menu
         /// </summary>
         public void TogglePauseMenu() {
-            if (endScreen.activeSelf) {
+            if (winScreen.activeSelf || loseScreen.activeSelf) {
                 return;
             }
 
@@ -51,10 +54,17 @@ namespace Manager {
         }
 
         /// <summary>
-        /// Shows the end screen to restart the game
+        /// Shows the win screen to restart the game
         /// </summary>
-        public void ShowEndScreen() {
-            endScreen.SetActive(true);
+        public void ShowWinScreen() {
+            winScreen.SetActive(true);
+        }
+
+        /// <summary>
+        /// Shows the lose screen to restart the game
+        /// </summary>
+        public void ShowLoseScreen() {
+            loseScreen.SetActive(true);
         }
     }
 }

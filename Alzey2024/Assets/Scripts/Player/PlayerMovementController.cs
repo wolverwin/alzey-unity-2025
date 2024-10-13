@@ -103,6 +103,8 @@ namespace Player {
         /// </summary>
         Vector2 currentVelocity = Vector2.zero;
 
+        GameManager gameManager;
+
         /// <summary>
         /// Value to multiply the movement speed by
         /// </summary>
@@ -112,6 +114,7 @@ namespace Player {
 
         void Start() {
             baseGravity = body.gravityScale;
+            gameManager = GameManager.Instance;
             EventManager.OnPlayerHurt += OnPlayerHurt;
             EventManager.OnPlayerRecovered += OnPlayerRecovered;
         }
@@ -120,7 +123,7 @@ namespace Player {
             DoGroundCheck();
             ApplyFallGravity();
 
-            if (!blockControls) {
+            if (!blockControls && !gameManager.GamePaused) {
                 horizontalMovement = Input.GetAxisRaw("Horizontal");
 
                 if (Input.GetButtonDown("Jump")) {

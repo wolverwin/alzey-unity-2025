@@ -2,7 +2,7 @@ using Item;
 using Manager;
 using UnityEngine;
 
-namespace Player { 
+namespace Player {
     public class PlayerCollectionController : MonoBehaviour {
         void OnTriggerEnter2D(Collider2D collision) {
             if (collision.tag != "Collectable") {
