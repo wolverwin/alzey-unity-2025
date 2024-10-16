@@ -23,7 +23,7 @@ namespace Manager {
         /// Invokes the OnPlayerHurt event
         /// </summary>
         public static void InvokeOnPlayerHurt() {
-            OnPlayerHurt.Invoke();
+            OnPlayerHurt?.Invoke();
         }
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace Manager {
         /// Invokes the OnPlayerRecovered event
         /// </summary>
         public static void InvokeOnPlayerRecovered() {
-            OnPlayerRecovered.Invoke();
+            OnPlayerRecovered?.Invoke();
         }
 
         public static event Action OnPlayerInvincible;
@@ -44,7 +44,7 @@ namespace Manager {
         /// Invokes the OnPlayerInvincible event
         /// </summary>
         public static void InvokeOnPlayerInvincible() {
-            OnPlayerInvincible.Invoke();
+            OnPlayerInvincible?.Invoke();
         }
 
 
@@ -54,7 +54,7 @@ namespace Manager {
         /// Invokes the OnPlayerNotInvincible event
         /// </summary>
         public static void InvokeOnPlayerNotInvincible() {
-            OnPlayerNotInvincible.Invoke();
+            OnPlayerNotInvincible?.Invoke();
         }
 
         public static event Action OnCharacterFlip;
@@ -63,7 +63,7 @@ namespace Manager {
         /// Invokes the OnCharacterFlip event
         /// </summary>
         public static void InvokeOnCharacterFlip() {
-            OnCharacterFlip.Invoke();
+            OnCharacterFlip?.Invoke();
         }
 
         public static event Action OnRequirementsFulfilled;
@@ -72,7 +72,7 @@ namespace Manager {
         /// Invokes the OnRequirementsFulfilled event
         /// </summary>
         public static void InvokeOnRequirementsFulfilled() {
-            OnRequirementsFulfilled.Invoke();
+            OnRequirementsFulfilled?.Invoke();
         }
     }
 }

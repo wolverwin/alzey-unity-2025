@@ -123,7 +123,7 @@ namespace Player {
             DoGroundCheck();
             ApplyFallGravity();
 
-            if (!blockControls && !gameManager.GamePaused) {
+            if (!blockControls && (gameManager == null || !gameManager.GamePaused)) {
                 horizontalMovement = Input.GetAxisRaw("Horizontal");
 
                 if (Input.GetButtonDown("Jump")) {
