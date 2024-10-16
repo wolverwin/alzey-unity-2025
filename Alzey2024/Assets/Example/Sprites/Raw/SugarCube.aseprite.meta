@@ -128,8 +128,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 84
-      y: 25
+      x: 24
+      y: 223
       width: 12
       height: 12
     spriteID: 174be29dcb3cc7045a0b1d07a257be77
@@ -140,18 +140,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 84, y: 25}
+    uvTransform: {x: 24, y: 223}
   - name: SugarCube_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.27272728}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 84
-      y: 65
+      x: 44
+      y: 4
       width: 12
-      height: 11
+      height: 12
     spriteID: 03255e4a0ea32f54ebb08611cc1b61c0
     spriteBone: []
     spriteOutline: []
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 84, y: 65}
+    uvTransform: {x: 44, y: 4}
   - name: SugarCube_Frame_2
     originalName: 
     pivot: {x: 0.5, y: -0.16666667}
@@ -168,8 +168,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 84
-      y: 45
+      x: 44
+      y: 24
       width: 12
       height: 12
     spriteID: e82701bce611a7f4eb91bb5de5ebb736
@@ -180,18 +180,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 84, y: 45}
+    uvTransform: {x: 44, y: 24}
   - name: SugarCube_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: -0.07692308}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 84
-      y: 4
+      x: 44
+      y: 44
       width: 12
-      height: 13
+      height: 12
     spriteID: 5f95969374134884da67daf852d89f50
     spriteBone: []
     spriteOutline: []
@@ -200,18 +200,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 84, y: 4}
+    uvTransform: {x: 44, y: 44}
   - name: SugarCube_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 4
+      x: 44
+      y: 64
       width: 12
-      height: 14
+      height: 12
     spriteID: 2e02b0373229e0549bf896ff7dda19f9
     spriteBone: []
     spriteOutline: []
@@ -220,18 +220,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 44, y: 64}
   - name: SugarCube_Frame_5
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 26
+      x: 44
+      y: 84
       width: 12
-      height: 14
+      height: 12
     spriteID: 3816ccbf53e465846b651e5e29ca5b96
     spriteBone: []
     spriteOutline: []
@@ -240,18 +240,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 26}
+    uvTransform: {x: 44, y: 84}
   - name: SugarCube_Frame_6
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 48
+      x: 44
+      y: 104
       width: 12
-      height: 14
+      height: 12
     spriteID: c535761bb6b628c448ebb7275f770de2
     spriteBone: []
     spriteOutline: []
@@ -260,18 +260,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 48}
+    uvTransform: {x: 44, y: 104}
   - name: SugarCube_Frame_7
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 70
+      x: 44
+      y: 124
       width: 12
-      height: 14
+      height: 12
     spriteID: f2759355b59f61e40a7fd7150d0205a9
     spriteBone: []
     spriteOutline: []
@@ -280,18 +280,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 70}
+    uvTransform: {x: 44, y: 124}
   - name: SugarCube_Frame_8
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 92
+      x: 44
+      y: 144
       width: 12
-      height: 14
+      height: 12
     spriteID: 0092b4f20da91d04981e57a3eeca41ff
     spriteBone: []
     spriteOutline: []
@@ -300,18 +300,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 92}
+    uvTransform: {x: 44, y: 144}
   - name: SugarCube_Frame_9
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
-      y: 4
+      x: 44
+      y: 164
       width: 12
-      height: 14
+      height: 12
     spriteID: 8d8e4a47f6ef1e44f90adfdf1111b616
     spriteBone: []
     spriteOutline: []
@@ -320,18 +320,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 4}
+    uvTransform: {x: 44, y: 164}
   - name: SugarCube_Frame_10
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
-      y: 26
+      x: 44
+      y: 184
       width: 12
-      height: 14
+      height: 12
     spriteID: a842b23fc10e7f94989e6cc3c9b04d60
     spriteBone: []
     spriteOutline: []
@@ -340,18 +340,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 26}
+    uvTransform: {x: 44, y: 184}
   - name: SugarCube_Frame_11
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
-      y: 48
+      x: 44
+      y: 204
       width: 12
-      height: 14
+      height: 12
     spriteID: c775189402ce78d40a1d768ec49cf384
     spriteBone: []
     spriteOutline: []
@@ -360,18 +360,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 48}
+    uvTransform: {x: 44, y: 204}
   - name: SugarCube_Frame_12
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
-      y: 70
+      x: 44
+      y: 224
       width: 12
-      height: 14
+      height: 12
     spriteID: c98f3c8c61cdd6f42a728ef098578fb1
     spriteBone: []
     spriteOutline: []
@@ -380,18 +380,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 70}
+    uvTransform: {x: 44, y: 224}
   - name: SugarCube_Frame_13
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.27272728}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 24
-      y: 92
+      x: 64
+      y: 24
       width: 12
-      height: 14
+      height: 11
     spriteID: 944560acfbde611468616b42b378b5b1
     spriteBone: []
     spriteOutline: []
@@ -400,18 +400,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 24, y: 92}
+    uvTransform: {x: 64, y: 24}
   - name: SugarCube_Frame_14
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
+      x: 64
       y: 4
       width: 12
-      height: 14
+      height: 12
     spriteID: 51566672c146d57428c8076eca6507f5
     spriteBone: []
     spriteOutline: []
@@ -420,18 +420,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 4}
+    uvTransform: {x: 64, y: 4}
   - name: SugarCube_Frame_15
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.07692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 26
+      x: 24
+      y: 202
       width: 12
-      height: 14
+      height: 13
     spriteID: 7edf263ca6defa24ebe48a520a114312
     spriteBone: []
     spriteOutline: []
@@ -440,7 +440,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 26}
+    uvTransform: {x: 24, y: 202}
   - name: SugarCube_Frame_16
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -448,8 +448,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 48
+      x: 4
+      y: 4
       width: 12
       height: 14
     spriteID: 12f05f2d4d7560d48a4fbdb90c8fba37
@@ -460,7 +460,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 48}
+    uvTransform: {x: 4, y: 4}
   - name: SugarCube_Frame_17
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -468,8 +468,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 70
+      x: 4
+      y: 26
       width: 12
       height: 14
     spriteID: fb0d7f48e79d785428b2fc6812a976a6
@@ -480,7 +480,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 70}
+    uvTransform: {x: 4, y: 26}
   - name: SugarCube_Frame_18
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -488,8 +488,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 92
+      x: 4
+      y: 48
       width: 12
       height: 14
     spriteID: ed9a4f7fc620abd4b915f65e8933b155
@@ -500,7 +500,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 92}
+    uvTransform: {x: 4, y: 48}
   - name: SugarCube_Frame_19
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -508,8 +508,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 64
-      y: 4
+      x: 4
+      y: 70
       width: 12
       height: 14
     spriteID: 656f80e9d3264b7459afa7ad10d83af5
@@ -520,7 +520,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 64, y: 4}
+    uvTransform: {x: 4, y: 70}
   - name: SugarCube_Frame_20
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -528,8 +528,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 64
-      y: 26
+      x: 4
+      y: 92
       width: 12
       height: 14
     spriteID: b8ac08f075fc1a7499f29ec3bae7e46b
@@ -540,7 +540,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 64, y: 26}
+    uvTransform: {x: 4, y: 92}
   - name: SugarCube_Frame_21
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -548,8 +548,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 64
-      y: 48
+      x: 4
+      y: 114
       width: 12
       height: 14
     spriteID: 7c59c8255a932db4680d84febe6c3156
@@ -560,7 +560,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 64, y: 48}
+    uvTransform: {x: 4, y: 114}
   - name: SugarCube_Frame_22
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -568,8 +568,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 64
-      y: 70
+      x: 4
+      y: 136
       width: 12
       height: 14
     spriteID: c2704c01c5178b945b512472e1d404a4
@@ -580,7 +580,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 64, y: 70}
+    uvTransform: {x: 4, y: 136}
   - name: SugarCube_Frame_23
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -588,8 +588,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 64
-      y: 92
+      x: 4
+      y: 158
       width: 12
       height: 14
     spriteID: d23bee502acdb3949ad2b8cbbb9d259f
@@ -600,7 +600,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 64, y: 92}
+    uvTransform: {x: 4, y: 158}
   - name: SugarCube_Frame_24
     originalName: 
     pivot: {x: 0.5, y: -0.27272728}
@@ -608,10 +608,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 84
-      y: 84
+      x: 4
+      y: 180
       width: 12
-      height: 11
+      height: 14
     spriteID: 768c86a7c2fe71849a0b8959f98023dc
     spriteBone: []
     spriteOutline: []
@@ -620,7 +620,247 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 84, y: 81}
+    uvTransform: {x: 4, y: 180}
+  - name: SugarCube_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 202
+      width: 12
+      height: 14
+    spriteID: a9f245ff9b95ee743a97626148140e98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 202}
+  - name: SugarCube_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 224
+      width: 12
+      height: 14
+    spriteID: ef90168257dff5442a78218c74a90aad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 224}
+  - name: SugarCube_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 4
+      width: 12
+      height: 14
+    spriteID: e89ba6d573022974193a4722e0922f73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 4}
+  - name: SugarCube_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 26
+      width: 12
+      height: 14
+    spriteID: c7a87a998e13e1f4e9f0cb6030ff0273
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 26}
+  - name: SugarCube_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 48
+      width: 12
+      height: 14
+    spriteID: 5cf6204135d54a44fa02eba30f7e7ec9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 48}
+  - name: SugarCube_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 70
+      width: 12
+      height: 14
+    spriteID: 91ee1b808199ea04098056382daf86d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 70}
+  - name: SugarCube_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 92
+      width: 12
+      height: 14
+    spriteID: bcc2f83df8a838e4a982c3dbdc6bf62b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 92}
+  - name: SugarCube_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 114
+      width: 12
+      height: 14
+    spriteID: bbbe595af892ea948bac5c3eebe57399
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 114}
+  - name: SugarCube_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 136
+      width: 12
+      height: 14
+    spriteID: 433d4c0323d6be245a33375b12c20ccf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 136}
+  - name: SugarCube_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 158
+      width: 12
+      height: 14
+    spriteID: 46371da72e9c6bd4ba6017a342ba0ab3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 158}
+  - name: SugarCube_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 24
+      y: 180
+      width: 12
+      height: 14
+    spriteID: 9345898cf563c9b4492ef843071a4839
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 180}
+  - name: SugarCube_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: -0.27272728}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 43
+      width: 12
+      height: 11
+    spriteID: fb418fe8f0afa7f49a6ed979542dbdce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 64, y: 40}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -644,9 +884,9 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 3
+        y: 2
         width: 12
-        height: 11
+        height: 12
       spriteId: 03255e4a0ea32f54ebb08611cc1b61c0
     - name: SugarCube_Frame_2
       frameIndex: 2
@@ -662,117 +902,117 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 1
+        y: 2
         width: 12
-        height: 13
+        height: 12
       spriteId: 5f95969374134884da67daf852d89f50
     - name: SugarCube_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 2
         width: 12
-        height: 14
+        height: 12
       spriteId: 2e02b0373229e0549bf896ff7dda19f9
     - name: SugarCube_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 2
         width: 12
-        height: 14
+        height: 12
       spriteId: 3816ccbf53e465846b651e5e29ca5b96
     - name: SugarCube_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 2
         width: 12
-        height: 14
+        height: 12
       spriteId: c535761bb6b628c448ebb7275f770de2
     - name: SugarCube_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 2
         width: 12
-        height: 14
+        height: 12
       spriteId: f2759355b59f61e40a7fd7150d0205a9
     - name: SugarCube_Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 2
         width: 12
-        height: 14
+        height: 12
       spriteId: 0092b4f20da91d04981e57a3eeca41ff
     - name: SugarCube_Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 2
         width: 12
-        height: 14
+        height: 12
       spriteId: 8d8e4a47f6ef1e44f90adfdf1111b616
     - name: SugarCube_Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 2
         width: 12
-        height: 14
+        height: 12
       spriteId: a842b23fc10e7f94989e6cc3c9b04d60
     - name: SugarCube_Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 2
         width: 12
-        height: 14
+        height: 12
       spriteId: c775189402ce78d40a1d768ec49cf384
     - name: SugarCube_Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 2
         width: 12
-        height: 14
+        height: 12
       spriteId: c98f3c8c61cdd6f42a728ef098578fb1
     - name: SugarCube_Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 3
         width: 12
-        height: 14
+        height: 11
       spriteId: 944560acfbde611468616b42b378b5b1
     - name: SugarCube_Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 2
         width: 12
-        height: 14
+        height: 12
       spriteId: 51566672c146d57428c8076eca6507f5
     - name: SugarCube_Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 0
+        y: 1
         width: 12
-        height: 14
+        height: 13
       spriteId: 7edf263ca6defa24ebe48a520a114312
     - name: SugarCube_Frame_16
       frameIndex: 16
@@ -855,6 +1095,114 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: 768c86a7c2fe71849a0b8959f98023dc
+    - name: SugarCube_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: a9f245ff9b95ee743a97626148140e98
+    - name: SugarCube_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: ef90168257dff5442a78218c74a90aad
+    - name: SugarCube_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: e89ba6d573022974193a4722e0922f73
+    - name: SugarCube_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: c7a87a998e13e1f4e9f0cb6030ff0273
+    - name: SugarCube_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: 5cf6204135d54a44fa02eba30f7e7ec9
+    - name: SugarCube_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: 91ee1b808199ea04098056382daf86d6
+    - name: SugarCube_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: bcc2f83df8a838e4a982c3dbdc6bf62b
+    - name: SugarCube_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: bbbe595af892ea948bac5c3eebe57399
+    - name: SugarCube_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: 433d4c0323d6be245a33375b12c20ccf
+    - name: SugarCube_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: 46371da72e9c6bd4ba6017a342ba0ab3
+    - name: SugarCube_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: 9345898cf563c9b4492ef843071a4839
+    - name: SugarCube_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 0
+        width: 12
+        height: 14
+      spriteId: fb418fe8f0afa7f49a6ed979542dbdce
     linkedCells: []
     parentIndex: -1
   platformSettings: []
