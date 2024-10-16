@@ -8,28 +8,34 @@ namespace Player {
         /// The damage the player gets when hurt once
         /// </summary>
         [SerializeField]
-        int damagePerHurt = 1;
+        private int damagePerHurt = 1;
+
+        /// <summary>
+        /// The time the player can't move for in seconds after getting hurt
+        /// </summary>
+        [SerializeField, Tooltip("The time the player can't move for, in seconds")]
+        private float hurtTime = 0.5f;
 
         /// <summary>
         /// The time the player is invincible for in seconds after getting hurt
         /// </summary>
         [SerializeField]
-        float hurtTime = 1.5f;
+        private float invincibleTime = 3;
 
         /// <summary>
-        /// The time the player is invincible for in seconds after getting hurt
+        /// Whether to use trigger for the collision or not
         /// </summary>
-        [SerializeField]
-        float invincibleTime = 3;
+        [SerializeField, Tooltip("If true, the damage is taken when hitting a trigger, instead of a collider")]
+        private bool useTrigger;
 
-        float hurtTimer;
-        float invincibleTimer;
+        private float hurtTimer;
+        private float invincibleTimer;
 
-        void Start() {
+        private void Start() {
             EventManager.OnPlayerHurt += HurtPlayer;
         }
 
-        void Update() {
+        private void Update() {
             if (hurtTimer > 0) {
                 hurtTimer -= Time.deltaTime;
 
@@ -50,16 +56,30 @@ namespace Player {
         /// <summary>
         /// Adds the given damage to the player damage
         /// </summary>
-        void HurtPlayer() {
+        private void HurtPlayer(Vector3 source) {
             GameManager.Instance.Damage += damagePerHurt;
             hurtTimer = hurtTime;
             invincibleTimer = invincibleTime;
             EventManager.InvokeOnPlayerInvincible();
         }
 
-        private void OnTriggerStay2D(Collider2D collision) {
+        private void OnCollisionStay2D(Collision2D collision) {
+            if (useTrigger) {
+                return;
+            }
+
             if (invincibleTimer <= 0 && collision.gameObject.CompareTag("Trap")) {
-                EventManager.InvokeOnPlayerHurt();
+                EventManager.InvokeOnPlayerHurt(collision.transform.position);
+            }
+        }
+
+        private void OnTriggerStay2D(Collider2D collision) {
+            if (!useTrigger) {
+                return;
+            }
+
+            if (invincibleTimer <= 0 && collision.gameObject.CompareTag("Trap")) {
+                EventManager.InvokeOnPlayerHurt(collision.transform.position);
             }
         }
     }

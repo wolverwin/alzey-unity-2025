@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace Manager {
     public static class EventManager {
@@ -17,13 +18,13 @@ namespace Manager {
         /// <summary>
         /// Event triggered when the Player gets hurt
         /// </summary>
-        public static event Action OnPlayerHurt;
+        public static event Action<Vector3> OnPlayerHurt;
 
         /// <summary>
         /// Invokes the OnPlayerHurt event
         /// </summary>
-        public static void InvokeOnPlayerHurt() {
-            OnPlayerHurt?.Invoke();
+        public static void InvokeOnPlayerHurt(Vector3 source) {
+            OnPlayerHurt?.Invoke(source);
         }
 
         /// <summary>

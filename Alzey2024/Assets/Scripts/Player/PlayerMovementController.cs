@@ -1,5 +1,6 @@
 using Manager;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Player {
     public class PlayerMovementController : MonoBehaviour {
@@ -8,118 +9,117 @@ namespace Player {
         /// The rigidbody of the player
         /// </summary>
         [SerializeField]
-        Rigidbody2D body;
+        private Rigidbody2D body;
 
         [Header("Movement")]
         /// <summary>
         /// The movement speed of the player
         /// </summary>
         [SerializeField]
-        float speed = 20;
+        private float speed = 20;
 
         [Header("Jumping")]
         /// <summary>
         /// The force applied to the player when jumping
         /// </summary>
         [SerializeField]
-        float jumpForce = 200;
+        private float jumpForce = 200;
 
         [Header("GroundCheck")]
         /// <summary>
         /// Transform to check if the player is grounded
         /// </summary>
         [SerializeField]
-        Transform groundCheck;
+        private Transform groundCheck;
 
         /// <summary>
         /// The size of the ground check box to check for
         /// </summary>
         [SerializeField]
-        Vector2 groundCheckSize;
+        private Vector2 groundCheckSize;
 
         /// <summary>
         /// Detmermines what is ground
         /// </summary>
         [SerializeField]
-        LayerMask whatIsGround;
+        private LayerMask whatIsGround;
 
         [Header("Gravity")]
         /// <summary>
         /// The max fall speed of the character
         /// </summary>
         [SerializeField]
-        float maxFallSpeed = 20;
+        private float maxFallSpeed = 20;
 
         /// <summary>
         /// How fast the character gets when falling
         /// </summary>
         [SerializeField]
-        float fallSpeedMultiplier = 2;
+        private float fallSpeedMultiplier = 2;
 
         [Header("Misc")]
         /// <summary>
         /// The force applied to the player if getting hurt
         /// </summary>
         [SerializeField]
-        float damageJumpForce = 200;
+        private float damageJumpForce = 200;
 
         /// <summary>
         /// The horizontal movement from the input system
         /// </summary>
-        float horizontalMovement;
+        private float horizontalMovement;
 
         /// <summary>
         /// If true, all controls are blocked
         /// </summary>
-        bool blockControls;
+        private bool blockControls;
 
         /// <summary>
         /// Whether the player should jump in the next fixed update or not
         /// </summary>
-        bool jump;
+        private bool jump;
 
         /// <summary>
         /// Whether the player is grounded or not
         /// </summary>
-        bool grounded;
+        private bool grounded;
 
         /// <summary>
         /// The base gravity we get from the rigidbody at start
         /// </summary>
-        float baseGravity;
+        private float baseGravity;
 
         /// <summary>
         /// Whether the player is currently on a wall or not
         /// </summary>
-        bool onWall;
+        private bool onWall;
 
         /// <summary>
         /// Whether the player currently faces right or left
         /// </summary>
-        bool facingRight = true;
+        private bool facingRight = true;
 
         /// <summary>
         /// The current velocity of the player
         /// </summary>
-        Vector2 currentVelocity = Vector2.zero;
-
-        GameManager gameManager;
+        private Vector2 currentVelocity = Vector2.zero;
+        private GameManager gameManager;
 
         /// <summary>
         /// Value to multiply the movement speed by
         /// </summary>
-        const float MOVEMENT_MULTIPLIER = 10f;
+        private const float MOVEMENT_MULTIPLIER = 10f;
 
         public const float MIN_VERTICAL_VELOCITY = 0.005f;
 
-        void Start() {
+        private void Start() {
             baseGravity = body.gravityScale;
             gameManager = GameManager.Instance;
             EventManager.OnPlayerHurt += OnPlayerHurt;
             EventManager.OnPlayerRecovered += OnPlayerRecovered;
         }
 
-        void Update() {
+        private void Update() {
             DoGroundCheck();
             ApplyFallGravity();
 
@@ -137,7 +137,7 @@ namespace Player {
             }
         }
 
-        void FixedUpdate() {
+        private void FixedUpdate() {
             // Calculate new velocity and apply it to the rigidbody
             Vector2 targetVelocity = new Vector2(horizontalMovement * MOVEMENT_MULTIPLIER * speed * Time.fixedDeltaTime, body.velocity.y);
             body.velocity = Vector2.SmoothDamp(body.velocity, targetVelocity, ref currentVelocity, 0.05f);
@@ -145,7 +145,7 @@ namespace Player {
             Jump();
         }
 
-        void Jump() {
+        private void Jump() {
             if (jump == false) {
                 return;
             }
@@ -160,7 +160,7 @@ namespace Player {
         /// <summary>
         /// Checks if the character is grounded
         /// </summary>
-        void DoGroundCheck() {
+        private void DoGroundCheck() {
             grounded = false;
 
             // The player is grounded if a boxcast to the groundcheck position hits anything designated as ground
@@ -173,7 +173,7 @@ namespace Player {
         /// <summary>
         /// Applies fall gravity if the character is falling
         /// </summary>
-        void ApplyFallGravity() {
+        private void ApplyFallGravity() {
             if (body.velocity.y < -MIN_VERTICAL_VELOCITY) {
                 body.gravityScale = baseGravity * fallSpeedMultiplier;
                 body.velocity = new Vector2(body.velocity.x, Mathf.Max(body.velocity.y, -maxFallSpeed));
@@ -186,7 +186,7 @@ namespace Player {
         /// <summary>
         /// Flip the player asset on the x-axis
         /// </summary>
-        void Flip() {
+        private void Flip() {
             Vector3 scale = transform.localScale;
             scale.x *= -1;
             transform.localScale = scale;
@@ -198,21 +198,26 @@ namespace Player {
         /// <summary>
         /// Triggered when the player gets hurt
         /// </summary>
-        void OnPlayerHurt() {
-            // Make the player jump when getting hurt
-            body.AddForce(new Vector2(0, damageJumpForce));
+        private void OnPlayerHurt(Vector3 source) {
+
+            Vector3 away = (transform.position - source).normalized * damageJumpForce;
+            Vector2 force = new Vector2(away.x, away.y);
+
+            // Make the player jump away when getting hurt
+            body.velocity = Vector2.zero;
+            body.AddForce(force);
             blockControls = true;
         }
 
         /// <summary>
         /// Triggered when the player recovered
         /// </summary>
-        void OnPlayerRecovered() {
+        private void OnPlayerRecovered() {
             blockControls = false;
             
         }
 
-        void OnDrawGizmosSelected() {
+        private void OnDrawGizmosSelected() {
             Gizmos.color = Color.white;
             Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
         }

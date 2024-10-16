@@ -7,18 +7,17 @@ namespace UI {
     public class UILiveController : UIController {
 
         [SerializeField]
-        GameObject live;
+        private GameObject live;
 
         [SerializeField]
-        GameObject lostLive;
+        private GameObject lostLive;
+        private GameManager gameManager;
+        private int liveCount;
+        private List<GameObject> instantiatedLives;
+        private int currentDamage;
+        private HorizontalLayoutGroup horizontalLayoutGroup;
 
-        GameManager gameManager;
-        int liveCount;
-        List<GameObject> instantiatedLives;
-        int currentDamage;
-        HorizontalLayoutGroup horizontalLayoutGroup;
-
-        void Start() {
+        private void Start() {
             gameManager = GameManager.Instance;
             liveCount = gameManager.BaseHealth;
             currentDamage = 0;
@@ -70,7 +69,7 @@ namespace UI {
         /// <param name="parent"></param>
         /// <param name="target"></param>
         /// <returns></returns>
-        int GetGameObjectIndex(Transform parent, GameObject target) {
+        private int GetGameObjectIndex(Transform parent, GameObject target) {
             int childCount = transform.childCount;
 
             for (int i = 0; i < childCount; i++) {

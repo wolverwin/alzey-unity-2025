@@ -5,18 +5,18 @@ namespace Finish {
     public class FinishController : MonoBehaviour {
 
         [SerializeField]
-        Collider2D finishCollider;
+        private Collider2D finishCollider;
 
         [SerializeField]
-        Animator animator;
-        
-        void Start() {
+        private Animator animator;
+
+        private void Start() {
             finishCollider.enabled = false;
 
             EventManager.OnRequirementsFulfilled += SetFinishActive;
         }
 
-        void SetFinishActive() {
+        private void SetFinishActive() {
             finishCollider.enabled = true;
             animator.SetTrigger("Activate");
         }

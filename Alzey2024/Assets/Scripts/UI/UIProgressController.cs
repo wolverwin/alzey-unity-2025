@@ -1,19 +1,30 @@
 using Manager;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UI {
     public class UIProgressController : UIController {
 
         [SerializeField]
-        GameObject progressItem;
+        private GameObject progressItem;
 
-        GameManager gameManager;
-        int itemCount;
-        List<GameObject> instantiatedItems;
-        int currentProgress;
+        [SerializeField, Tooltip("The sprite to show when the item was collected. Only relevant if animated is false.")]
+        private Sprite collectedSprite;
 
-        void Start() {
+        [SerializeField, Tooltip("If the progress should be animated. If set to true, animationParameter must be set!")]
+        private bool animated;
+
+        [SerializeField, Tooltip("The parameter to set for the animation. Only relevant if animated is true.")]
+
+        private string animationParameter = "FillGlass";
+        private GameManager gameManager;
+        private int itemCount;
+        private List<GameObject> instantiatedItems;
+        private int currentProgress;
+
+        private void Start() {
             gameManager = GameManager.Instance;
             itemCount = gameManager.ItemCount;
             instantiatedItems = new List<GameObject>();
@@ -31,8 +42,13 @@ namespace UI {
             }
 
             for (int i = currentProgress; i < newProgress; i++) {
-                Animator animator = instantiatedItems[i].GetComponent<Animator>();
-                animator.SetBool("FillGlass", true);
+                if (animated) {
+                    Animator animator = instantiatedItems[i].GetComponent<Animator>();
+                    animator.SetBool(animationParameter, true);
+                } else {
+                    Image image = instantiatedItems[i].GetComponent<Image>();
+                    image.sprite = collectedSprite;
+                }
             }
 
             currentProgress = newProgress;

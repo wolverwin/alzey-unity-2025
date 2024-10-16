@@ -6,20 +6,19 @@ namespace Player {
     public class PlayerAnimationController : MonoBehaviour {
 
         [SerializeField]
-        Rigidbody2D body;
+        private Rigidbody2D body;
 
         [SerializeField]
-        SpriteRenderer spriteRenderer;
+        private SpriteRenderer spriteRenderer;
 
         [SerializeField]
-        Animator animator;
+        private Animator animator;
 
         [SerializeField, Range(0, 1)]
-        float invincibleAlpha = 0.5f;
+        private float invincibleAlpha = 0.5f;
+        private float initialAlpha;
 
-        float initialAlpha;
-
-        void Start() {
+        private void Start() {
             initialAlpha = spriteRenderer.color.a;
 
             EventManager.OnPlayerHurt += TriggerHurtAnimation;
@@ -28,7 +27,7 @@ namespace Player {
             EventManager.OnPlayerNotInvincible += OnPlayerNotInvincible;
         }
 
-        void Update() {
+        private void Update() {
             animator.SetFloat("Speed", Mathf.Abs(body.velocity.x));
 
             bool isJumping = false;
@@ -44,21 +43,21 @@ namespace Player {
             animator.SetBool("Falling", isFalling);
         }
 
-        void TriggerHurtAnimation() {
+        private void TriggerHurtAnimation(Vector3 source) {
             animator.SetBool("Hurt", true);
         }
 
-        void StopHurtAnimation() {
+        private void StopHurtAnimation() {
             animator.SetBool("Hurt", false);
         }
 
-        void OnPlayerInvincible() {
+        private void OnPlayerInvincible() {
             Color spriteColor = spriteRenderer.color;
             spriteColor.a = invincibleAlpha;
             spriteRenderer.color = spriteColor;
         }
 
-        void OnPlayerNotInvincible() {
+        private void OnPlayerNotInvincible() {
             Color spriteColor = spriteRenderer.color;
             spriteColor.a = initialAlpha;
             spriteRenderer.color = spriteColor;

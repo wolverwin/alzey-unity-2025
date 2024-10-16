@@ -4,8 +4,7 @@ using UnityEngine;
 
 namespace Manager {
     public class UIManager : MonoBehaviour {
-
-        static UIManager instance;
+        private static UIManager instance;
 
         public static UIManager Instance {
             get {
@@ -18,21 +17,20 @@ namespace Manager {
         }
 
         [SerializeField]
-        GameObject pauseMenu;
+        private GameObject pauseMenu;
 
         [SerializeField]
-        GameObject winScreen;
+        private GameObject winScreen;
 
         [SerializeField]
-        GameObject loseScreen;
+        private GameObject loseScreen;
+        private List<UIController> uiController;
 
-        List<UIController> uiController;
-
-        void Awake() {
+        private void Awake() {
             instance = this;
         }
 
-        void Start() {
+        private void Start() {
             uiController = new List<UIController>(GetComponentsInChildren<UIController>(true));
         }
 

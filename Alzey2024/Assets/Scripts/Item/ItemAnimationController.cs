@@ -4,15 +4,15 @@ namespace Item {
     public class ItemAnimationController : MonoBehaviour {
 
         [SerializeField]
-        ItemController controller;
+        private ItemController controller;
 
         [SerializeField]
-        Animator animator;
+        private Animator animator;
 
         /// <summary>
         /// Triggered when the collected animation finished
         /// </summary>
-        void CollectAnimationFinished() {
+        private void CollectAnimationFinished() {
             controller.OnItemCollectedAnimationFinished();
         }
 

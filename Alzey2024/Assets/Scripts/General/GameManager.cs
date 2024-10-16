@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 namespace Manager {
     public class GameManager : MonoBehaviour {
-        
-        static GameManager instance;
+
+        private static GameManager instance;
 
         public static GameManager Instance {
             get {
@@ -17,13 +17,13 @@ namespace Manager {
             } 
         }
 
-        UIManager uiManager;
+        private UIManager uiManager;
 
         /// <summary>
         /// The base health of the player
         /// </summary>
         [SerializeField]
-        int baseHealth = 3;
+        private int baseHealth = 3;
 
         public int BaseHealth {
             get {
@@ -34,7 +34,7 @@ namespace Manager {
         /// <summary>
         /// The current damage of the player
         /// </summary>
-        int damage;
+        private int damage;
 
         public int Damage {
             get {
@@ -42,7 +42,7 @@ namespace Manager {
             }
             set {
                 damage = value;
-                uiManager.UpdateUI();
+                uiManager?.UpdateUI();
 
                 if (damage >= baseHealth) { 
                     EndGame();
@@ -53,7 +53,7 @@ namespace Manager {
         /// <summary>
         /// The count of items collected by the player
         /// </summary>
-        int itemsCollected;
+        private int itemsCollected;
 
         public int ItemsCollected {
             get {
@@ -62,7 +62,7 @@ namespace Manager {
 
             set { 
                 itemsCollected = value;
-                uiManager.UpdateUI();
+                uiManager?.UpdateUI();
 
                 if (itemsCollected >= itemCount) {
                     EventManager.InvokeOnRequirementsFulfilled();
@@ -73,7 +73,7 @@ namespace Manager {
         /// <summary>
         /// How many items are in this level
         /// </summary>
-        int itemCount;
+        private int itemCount;
 
         public int ItemCount {
             get {
@@ -88,7 +88,7 @@ namespace Manager {
         /// <summary>
         /// Whether the game is paused or not
         /// </summary>
-        bool gamePaused;
+        private bool gamePaused;
 
         public bool GamePaused {
             get {
@@ -96,21 +96,21 @@ namespace Manager {
             } 
         }
 
-        void Awake() {
+        private void Awake() {
             instance = this;
         }
 
-        void Start() {
+        private void Start() {
             EventManager.Reset();
             uiManager = UIManager.Instance;
 
             Time.timeScale = 1;
         }
 
-        void Update() {
+        private void Update() {
             if (Input.GetButtonDown("Cancel")) {
                 gamePaused = !gamePaused;
-                uiManager.TogglePauseMenu();
+                uiManager?.TogglePauseMenu();
 
                 if (gamePaused) {
                     Time.timeScale = 0;
@@ -143,7 +143,7 @@ namespace Manager {
             // No next level, end the game here
             if (nextLevelIndex >= SceneManager.sceneCountInBuildSettings) {
                 Time.timeScale = 0;
-                uiManager.ShowWinScreen();
+                uiManager?.ShowWinScreen();
                 return;
             }
 
@@ -153,9 +153,9 @@ namespace Manager {
         /// <summary>
         /// Ends the game
         /// </summary>
-        void EndGame() {
+        private void EndGame() {
             Time.timeScale = 0;
-            uiManager.ShowLoseScreen();
+            uiManager?.ShowLoseScreen();
         }
     }
 }

@@ -4,9 +4,8 @@ namespace Item {
     public class ItemController : MonoBehaviour {
 
         [SerializeField]
-        ItemAnimationController animationController;
-
-        bool collected;
+        private ItemAnimationController animationController;
+        private bool collected;
 
         public bool Collected {
             get { return collected; } 

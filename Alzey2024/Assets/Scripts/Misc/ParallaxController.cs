@@ -7,19 +7,18 @@ namespace Misc {
         /// How fast the background moves relative to the camera. 0 = moves with cam || 1 won't move
         /// </summary>
         [SerializeField, Range(0, 1)]
-        float modifier;
+        private float modifier;
+        private Camera cam;
+        private float startPosition;
+        private float width;
 
-        Camera cam;
-        float startPosition;
-        float width;
-
-        void Start() {
+        private void Start() {
             width = GetComponent<SpriteRenderer>().bounds.size.x;
             cam = Camera.main;
             startPosition = transform.position.x;
         }
 
-        void FixedUpdate() {
+        private void FixedUpdate() {
             // Calculate distance background move base on cam movement
             float distance = cam.transform.position.x * modifier;
             float movement = cam.transform.position.x * (1 - modifier);

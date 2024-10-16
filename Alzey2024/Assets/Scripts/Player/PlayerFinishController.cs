@@ -3,14 +3,13 @@ using UnityEngine;
 
 namespace Player {
     public class PlayerFinishController : MonoBehaviour {
+        private GameManager gameManager;
 
-        GameManager gameManager;
-
-        void Start() {
+        private void Start() {
             gameManager = GameManager.Instance;
         }
 
-        void OnTriggerEnter2D(Collider2D collision) {
+        private void OnTriggerEnter2D(Collider2D collision) {
             if (collision.tag != "Finish") {
                 return;
             }

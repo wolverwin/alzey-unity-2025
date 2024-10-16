@@ -5,13 +5,13 @@ using UnityEngine;
 namespace Misc {
     public class CameraController : MonoBehaviour {
         [SerializeField]
-        CinemachineVirtualCamera virtualCamera;
+        private CinemachineVirtualCamera virtualCamera;
 
-        void Start() {
+        private void Start() {
             EventManager.OnCharacterFlip += FlipView;
         }
 
-        void FlipView() {
+        private void FlipView() {
             CinemachineFramingTransposer framingTransposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
             Vector3 offset = framingTransposer.m_TrackedObjectOffset;
             offset.x *= -1;
