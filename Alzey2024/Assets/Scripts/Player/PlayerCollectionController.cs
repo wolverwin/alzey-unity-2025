@@ -4,6 +4,13 @@ using UnityEngine;
 
 namespace Player {
     public class PlayerCollectionController : MonoBehaviour {
+        
+        GameManager gameManager;
+
+        void Start() {
+            gameManager = GameManager.Instance;    
+        }
+
         void OnTriggerEnter2D(Collider2D collision) {
             if (collision.tag != "Collectable") {
                 return;
@@ -16,7 +23,10 @@ namespace Player {
             }
 
             itemController.OnItemCollected();
-            GameManager.Instance.ItemsCollected++;
+
+            if (gameManager != null) {
+                gameManager.ItemsCollected++;
+            }
         }
     }
 }
