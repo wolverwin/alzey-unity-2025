@@ -6,7 +6,7 @@ namespace Misc {
         /// <summary>
         /// How fast the background moves relative to the camera. 0 = moves with cam || 1 won't move
         /// </summary>
-        [SerializeField, Range(0, 1)]
+        [SerializeField, Range(0, 1), Tooltip("0 moves with cam || 1 won't move")]
         private float modifier;
         private Camera cam;
         private float startPosition;
@@ -22,7 +22,6 @@ namespace Misc {
             // Calculate distance background move base on cam movement
             float distance = cam.transform.position.x * modifier;
             float movement = cam.transform.position.x * (1 - modifier);
-
 
             transform.position = new Vector3(startPosition + distance, transform.position.y, transform.position.z);
 
