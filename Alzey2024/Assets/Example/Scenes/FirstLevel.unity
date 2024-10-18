@@ -4681,7 +4681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressItem: {fileID: 2327924138688802909, guid: a062da8b207a66342aead1d39268ab75, type: 3}
   collectedSprite: {fileID: 0}
-  animated: 0
+  animated: 1
   animationParameter: FillGlass
 --- !u!114 &1489163280
 MonoBehaviour:

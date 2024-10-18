@@ -1216,7 +1216,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.108693, y: -6, z: -10}
+  m_LocalPosition: {x: -9.111076, y: -6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5358,6 +5358,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressItem: {fileID: 2327924138688802909, guid: a062da8b207a66342aead1d39268ab75, type: 3}
+  collectedSprite: {fileID: 0}
+  animated: 1
+  animationParameter: FillGlass
 --- !u!114 &1489163280
 MonoBehaviour:
   m_ObjectHideFlags: 0
