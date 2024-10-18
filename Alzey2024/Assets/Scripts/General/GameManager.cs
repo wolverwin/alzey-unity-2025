@@ -135,6 +135,13 @@ namespace Manager {
         }
 
         /// <summary>
+        /// Exits the game
+        /// </summary>
+        public void Exit() {
+            Application.Quit();
+        }
+
+        /// <summary>
         /// Finishes the level and either shows the end screen or starts the next level
         /// </summary>
         public void FinishLevel() {
