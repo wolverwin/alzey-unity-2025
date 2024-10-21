@@ -1,6 +1,5 @@
 using Manager;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Player {
     public class PlayerMovementController : MonoBehaviour {
