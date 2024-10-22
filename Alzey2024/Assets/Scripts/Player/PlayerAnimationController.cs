@@ -25,6 +25,7 @@ namespace Player {
             EventManager.OnPlayerRecovered += StopHurtAnimation;
             EventManager.OnPlayerInvincible += OnPlayerInvincible;
             EventManager.OnPlayerNotInvincible += OnPlayerNotInvincible;
+            EventManager.OnPlayerDied += OnPlayerDied;
         }
 
         private void Update() {
@@ -61,6 +62,10 @@ namespace Player {
             Color spriteColor = spriteRenderer.color;
             spriteColor.a = initialAlpha;
             spriteRenderer.color = spriteColor;
+        }
+
+        private void OnPlayerDied() {
+            animator.SetBool("Die", true);
         }
     }
 }

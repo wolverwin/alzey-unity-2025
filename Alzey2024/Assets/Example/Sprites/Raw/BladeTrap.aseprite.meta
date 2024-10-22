@@ -590,7 +590,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: BladeTrap_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -599,7 +599,7 @@ ScriptedImporter:
         width: 16
         height: 7
       spriteId: e85e81f78f633aa49ad6173bc5cf16ab
-    - name: BladeTrap_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -608,7 +608,7 @@ ScriptedImporter:
         width: 14
         height: 7
       spriteId: 40b1eee159e8dd04f885b66bc5fc5a88
-    - name: BladeTrap_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -617,7 +617,7 @@ ScriptedImporter:
         width: 12
         height: 7
       spriteId: 45741e379b39e7a4d9653519761b79f6
-    - name: BladeTrap_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -626,7 +626,7 @@ ScriptedImporter:
         width: 10
         height: 7
       spriteId: e4046b865a8d9a24a9a15eb9c02eff17
-    - name: BladeTrap_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -635,7 +635,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: 1c034f3f4f1069f47a223a2dd1b5e5e6
-    - name: BladeTrap_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -644,7 +644,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: d0a89b5d78448724db380e6e1a52025e
-    - name: BladeTrap_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -653,7 +653,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: 1ccc820f6bcfd9e4f85959aae7b90f13
-    - name: BladeTrap_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -662,7 +662,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: 92d7d976640103b4cb6b55ae764d74ca
-    - name: BladeTrap_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -671,7 +671,7 @@ ScriptedImporter:
         width: 10
         height: 7
       spriteId: 01ceb98257d5d4b448b6d4244b99daea
-    - name: BladeTrap_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -680,7 +680,7 @@ ScriptedImporter:
         width: 12
         height: 7
       spriteId: 0a376d8feab0e6144aa2de4ca68a2c40
-    - name: BladeTrap_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -689,7 +689,7 @@ ScriptedImporter:
         width: 14
         height: 7
       spriteId: b6c8843fa152d0d468997d2a473a3c79
-    - name: BladeTrap_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
@@ -698,7 +698,7 @@ ScriptedImporter:
         width: 16
         height: 7
       spriteId: 185c8ce64b0db4446a1a6d8419300138
-    - name: BladeTrap_Frame_12
+    - name: Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
@@ -707,7 +707,7 @@ ScriptedImporter:
         width: 14
         height: 7
       spriteId: adc8ec6882eab6f4784528e02108d3fa
-    - name: BladeTrap_Frame_13
+    - name: Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
@@ -716,7 +716,7 @@ ScriptedImporter:
         width: 12
         height: 7
       spriteId: a585c74ee1288474186c02547451ba8c
-    - name: BladeTrap_Frame_14
+    - name: Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
@@ -725,7 +725,7 @@ ScriptedImporter:
         width: 10
         height: 7
       spriteId: ce457eb36eae1f14b97b321a64ed3f61
-    - name: BladeTrap_Frame_15
+    - name: Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
@@ -734,7 +734,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: 803ea94b6c1017b46b79ff15e41f0701
-    - name: BladeTrap_Frame_16
+    - name: Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
@@ -743,7 +743,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: 570e454d48164934e832318e2fdac242
-    - name: BladeTrap_Frame_17
+    - name: Frame_17
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
@@ -752,7 +752,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: 30e8bca65b7fc114899e139070fa348b
-    - name: BladeTrap_Frame_18
+    - name: Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
@@ -761,7 +761,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: 83c78b53856340f4396e60c668257325
-    - name: BladeTrap_Frame_19
+    - name: Frame_19
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
@@ -770,7 +770,7 @@ ScriptedImporter:
         width: 10
         height: 7
       spriteId: d8f50ec854fbb5b49807e33d221824d9
-    - name: BladeTrap_Frame_20
+    - name: Frame_20
       frameIndex: 20
       additiveSortOrder: 0
       cellRect:
@@ -779,7 +779,7 @@ ScriptedImporter:
         width: 12
         height: 7
       spriteId: 97c04db92a8c39247b264484589cd291
-    - name: BladeTrap_Frame_21
+    - name: Frame_21
       frameIndex: 21
       additiveSortOrder: 0
       cellRect:
@@ -788,7 +788,7 @@ ScriptedImporter:
         width: 14
         height: 7
       spriteId: 1273938a9402e134db672fef648e9ded
-    - name: BladeTrap_Frame_22
+    - name: Frame_22
       frameIndex: 22
       additiveSortOrder: 0
       cellRect:

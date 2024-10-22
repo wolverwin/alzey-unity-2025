@@ -190,7 +190,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: RestartButton_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -199,7 +199,7 @@ ScriptedImporter:
         width: 16
         height: 16
       spriteId: c20360d1875f6a540825baeb14c0a738
-    - name: RestartButton_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -208,7 +208,7 @@ ScriptedImporter:
         width: 16
         height: 16
       spriteId: ee82f6620e256784bbb88d51d618c853
-    - name: RestartButton_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:

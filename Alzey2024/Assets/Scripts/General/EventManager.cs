@@ -13,6 +13,7 @@ namespace Manager {
             OnPlayerNotInvincible = null;
             OnCharacterFlip = null;
             OnRequirementsFulfilled = null;
+            OnPlayerDied = null;
         }
 
         /// <summary>
@@ -74,6 +75,15 @@ namespace Manager {
         /// </summary>
         public static void InvokeOnRequirementsFulfilled() {
             OnRequirementsFulfilled?.Invoke();
+        }
+
+        public static event Action OnPlayerDied;
+
+        /// <summary>
+        /// Invokes the OnRequirementsFulfilled event
+        /// </summary>
+        public static void InvokeOnPlayerDied() {
+            OnPlayerDied?.Invoke();
         }
     }
 }

@@ -870,7 +870,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: SugarCube_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -879,7 +879,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: 174be29dcb3cc7045a0b1d07a257be77
-    - name: SugarCube_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -888,7 +888,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: 03255e4a0ea32f54ebb08611cc1b61c0
-    - name: SugarCube_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -897,7 +897,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: e82701bce611a7f4eb91bb5de5ebb736
-    - name: SugarCube_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -906,7 +906,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: 5f95969374134884da67daf852d89f50
-    - name: SugarCube_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -915,7 +915,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: 2e02b0373229e0549bf896ff7dda19f9
-    - name: SugarCube_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -924,7 +924,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: 3816ccbf53e465846b651e5e29ca5b96
-    - name: SugarCube_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -933,7 +933,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: c535761bb6b628c448ebb7275f770de2
-    - name: SugarCube_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -942,7 +942,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: f2759355b59f61e40a7fd7150d0205a9
-    - name: SugarCube_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -951,7 +951,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: 0092b4f20da91d04981e57a3eeca41ff
-    - name: SugarCube_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -960,7 +960,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: 8d8e4a47f6ef1e44f90adfdf1111b616
-    - name: SugarCube_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -969,7 +969,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: a842b23fc10e7f94989e6cc3c9b04d60
-    - name: SugarCube_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
@@ -978,7 +978,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: c775189402ce78d40a1d768ec49cf384
-    - name: SugarCube_Frame_12
+    - name: Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
@@ -987,7 +987,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: c98f3c8c61cdd6f42a728ef098578fb1
-    - name: SugarCube_Frame_13
+    - name: Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
@@ -996,7 +996,7 @@ ScriptedImporter:
         width: 12
         height: 11
       spriteId: 944560acfbde611468616b42b378b5b1
-    - name: SugarCube_Frame_14
+    - name: Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
@@ -1005,7 +1005,7 @@ ScriptedImporter:
         width: 12
         height: 12
       spriteId: 51566672c146d57428c8076eca6507f5
-    - name: SugarCube_Frame_15
+    - name: Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
@@ -1014,7 +1014,7 @@ ScriptedImporter:
         width: 12
         height: 13
       spriteId: 7edf263ca6defa24ebe48a520a114312
-    - name: SugarCube_Frame_16
+    - name: Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
@@ -1023,7 +1023,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: 12f05f2d4d7560d48a4fbdb90c8fba37
-    - name: SugarCube_Frame_17
+    - name: Frame_17
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
@@ -1032,7 +1032,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: fb0d7f48e79d785428b2fc6812a976a6
-    - name: SugarCube_Frame_18
+    - name: Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
@@ -1041,7 +1041,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: ed9a4f7fc620abd4b915f65e8933b155
-    - name: SugarCube_Frame_19
+    - name: Frame_19
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
@@ -1050,7 +1050,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: 656f80e9d3264b7459afa7ad10d83af5
-    - name: SugarCube_Frame_20
+    - name: Frame_20
       frameIndex: 20
       additiveSortOrder: 0
       cellRect:
@@ -1059,7 +1059,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: b8ac08f075fc1a7499f29ec3bae7e46b
-    - name: SugarCube_Frame_21
+    - name: Frame_21
       frameIndex: 21
       additiveSortOrder: 0
       cellRect:
@@ -1068,7 +1068,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: 7c59c8255a932db4680d84febe6c3156
-    - name: SugarCube_Frame_22
+    - name: Frame_22
       frameIndex: 22
       additiveSortOrder: 0
       cellRect:
@@ -1077,7 +1077,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: c2704c01c5178b945b512472e1d404a4
-    - name: SugarCube_Frame_23
+    - name: Frame_23
       frameIndex: 23
       additiveSortOrder: 0
       cellRect:
@@ -1086,7 +1086,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: d23bee502acdb3949ad2b8cbbb9d259f
-    - name: SugarCube_Frame_24
+    - name: Frame_24
       frameIndex: 24
       additiveSortOrder: 0
       cellRect:
@@ -1095,7 +1095,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: 768c86a7c2fe71849a0b8959f98023dc
-    - name: SugarCube_Frame_25
+    - name: Frame_25
       frameIndex: 25
       additiveSortOrder: 0
       cellRect:
@@ -1104,7 +1104,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: a9f245ff9b95ee743a97626148140e98
-    - name: SugarCube_Frame_26
+    - name: Frame_26
       frameIndex: 26
       additiveSortOrder: 0
       cellRect:
@@ -1113,7 +1113,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: ef90168257dff5442a78218c74a90aad
-    - name: SugarCube_Frame_27
+    - name: Frame_27
       frameIndex: 27
       additiveSortOrder: 0
       cellRect:
@@ -1122,7 +1122,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: e89ba6d573022974193a4722e0922f73
-    - name: SugarCube_Frame_28
+    - name: Frame_28
       frameIndex: 28
       additiveSortOrder: 0
       cellRect:
@@ -1131,7 +1131,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: c7a87a998e13e1f4e9f0cb6030ff0273
-    - name: SugarCube_Frame_29
+    - name: Frame_29
       frameIndex: 29
       additiveSortOrder: 0
       cellRect:
@@ -1140,7 +1140,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: 5cf6204135d54a44fa02eba30f7e7ec9
-    - name: SugarCube_Frame_30
+    - name: Frame_30
       frameIndex: 30
       additiveSortOrder: 0
       cellRect:
@@ -1149,7 +1149,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: 91ee1b808199ea04098056382daf86d6
-    - name: SugarCube_Frame_31
+    - name: Frame_31
       frameIndex: 31
       additiveSortOrder: 0
       cellRect:
@@ -1158,7 +1158,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: bcc2f83df8a838e4a982c3dbdc6bf62b
-    - name: SugarCube_Frame_32
+    - name: Frame_32
       frameIndex: 32
       additiveSortOrder: 0
       cellRect:
@@ -1167,7 +1167,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: bbbe595af892ea948bac5c3eebe57399
-    - name: SugarCube_Frame_33
+    - name: Frame_33
       frameIndex: 33
       additiveSortOrder: 0
       cellRect:
@@ -1176,7 +1176,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: 433d4c0323d6be245a33375b12c20ccf
-    - name: SugarCube_Frame_34
+    - name: Frame_34
       frameIndex: 34
       additiveSortOrder: 0
       cellRect:
@@ -1185,7 +1185,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: 46371da72e9c6bd4ba6017a342ba0ab3
-    - name: SugarCube_Frame_35
+    - name: Frame_35
       frameIndex: 35
       additiveSortOrder: 0
       cellRect:
@@ -1194,7 +1194,7 @@ ScriptedImporter:
         width: 12
         height: 14
       spriteId: 9345898cf563c9b4492ef843071a4839
-    - name: SugarCube_Frame_36
+    - name: Frame_36
       frameIndex: 36
       additiveSortOrder: 0
       cellRect:

@@ -510,7 +510,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Glas_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -519,7 +519,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 9a52c93c58ad5ba4eb0b2a794d7a2875
-    - name: Glas_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -528,7 +528,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 445ba6639e21bd24fb85573f2d4aedd7
-    - name: Glas_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -537,7 +537,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 7e0b9878d6cb9364b83b54d6db9bf2b7
-    - name: Glas_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -546,7 +546,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 926c88e3ea388ed46b3b0f1ae5735ff6
-    - name: Glas_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -555,7 +555,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: f4d4fd35ff5ba164ebd6b7466c2b00b1
-    - name: Glas_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -564,7 +564,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 0e875a001fc880d42b4e0182cfe3f276
-    - name: Glas_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -573,7 +573,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: e124d6369bf9afe419f7706a406e218d
-    - name: Glas_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -582,7 +582,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: d294952f4c2aab04888ce41f9178ac45
-    - name: Glas_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -591,7 +591,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: f791091469f717c478b36ff4411cc501
-    - name: Glas_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -600,7 +600,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: dc5c5d46e2f668143a9f2c973383fd7a
-    - name: Glas_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -609,7 +609,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 459aff27d07784b458003c9981481a5f
-    - name: Glas_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
@@ -618,7 +618,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 2a73c5b4825822a49999029d6c2210ab
-    - name: Glas_Frame_13
+    - name: Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
@@ -627,7 +627,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 48798bfbdb42af64f84a65a927a48350
-    - name: Glas_Frame_14
+    - name: Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
@@ -636,7 +636,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 05ecf8c35aea6c845b1b653dafac6c4a
-    - name: Glas_Frame_15
+    - name: Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
@@ -645,7 +645,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: aab79f5d2cc5fd44db2ef4886f2a82f5
-    - name: Glas_Frame_16
+    - name: Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
@@ -654,7 +654,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: bf14dc5d7d5869541bc23a1e1eea48c1
-    - name: Glas_Frame_17
+    - name: Frame_17
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
@@ -663,7 +663,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: c60cf131765681749adf3e4cc1b184e2
-    - name: Glas_Frame_18
+    - name: Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
@@ -672,7 +672,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 6da855d64a9062e41ae4328d177db0b6
-    - name: Glas_Frame_19
+    - name: Frame_19
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:

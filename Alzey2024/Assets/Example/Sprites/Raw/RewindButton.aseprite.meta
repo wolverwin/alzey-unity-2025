@@ -190,7 +190,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: RewindButton_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -199,7 +199,7 @@ ScriptedImporter:
         width: 16
         height: 16
       spriteId: e0f7a4945f455a943be8f6c38a8e9a2f
-    - name: RewindButton_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -208,7 +208,7 @@ ScriptedImporter:
         width: 16
         height: 16
       spriteId: 35d6f84a0867bdd40a93b39d936f08fc
-    - name: RewindButton_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:

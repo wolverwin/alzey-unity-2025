@@ -161,6 +161,7 @@ namespace Manager {
         /// Ends the game
         /// </summary>
         private void EndGame() {
+            EventManager.InvokeOnPlayerDied();
             Time.timeScale = 0;
             uiManager?.ShowLoseScreen();
         }

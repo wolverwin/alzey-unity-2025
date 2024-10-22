@@ -370,7 +370,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: PlayerStrawberry_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -379,7 +379,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: 34f840fa804dddd48b36b43eacc89c70
-    - name: PlayerStrawberry_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -388,7 +388,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: bab92c90a8062bd46a379823080d4f77
-    - name: PlayerStrawberry_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -397,7 +397,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: 86289968cdaeb874e9cabcbfb51a0358
-    - name: PlayerStrawberry_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -406,7 +406,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: 06c82b6b2bd4e5c40a0eecc03799425a
-    - name: PlayerStrawberry_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -415,7 +415,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: bda5c2696be5be2419170bd2830b1fd6
-    - name: PlayerStrawberry_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -424,7 +424,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: e3db9f5f88f2f484dad6ad0e3ebadb46
-    - name: PlayerStrawberry_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -433,7 +433,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: 6647941760107d14498981f9289f7a8e
-    - name: PlayerStrawberry_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -442,7 +442,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: b5b454891a6ebcc4bacb46df8738b9c8
-    - name: PlayerStrawberry_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -451,7 +451,7 @@ ScriptedImporter:
         width: 15
         height: 14
       spriteId: 44a2848f99defe74f9d6b3733c29efb5
-    - name: PlayerStrawberry_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -460,7 +460,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 21313be10e5004d409398eae9cf82c4b
-    - name: PlayerStrawberry_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -469,7 +469,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: a130ce34858d16a439787e672969ae04
-    - name: PlayerStrawberry_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:

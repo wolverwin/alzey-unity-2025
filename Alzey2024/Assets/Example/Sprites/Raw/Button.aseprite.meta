@@ -190,7 +190,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Button_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -199,7 +199,7 @@ ScriptedImporter:
         width: 32
         height: 16
       spriteId: bce84326a78ac4e48bea92951f3ed18a
-    - name: Button_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -208,7 +208,7 @@ ScriptedImporter:
         width: 32
         height: 16
       spriteId: a97f8e619aaa8d94bbb17ab7c5c62aa7
-    - name: Button_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:

@@ -170,7 +170,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Heart_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -179,7 +179,7 @@ ScriptedImporter:
         width: 16
         height: 14
       spriteId: 3239a06ed63bc6d46bf367dbb3ff01a7
-    - name: Heart_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:

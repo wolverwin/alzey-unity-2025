@@ -370,7 +370,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: BladeTrapFaster_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -379,7 +379,7 @@ ScriptedImporter:
         width: 16
         height: 7
       spriteId: 856ed78c448a5124cae2ebd560a8861b
-    - name: BladeTrapFaster_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -388,7 +388,7 @@ ScriptedImporter:
         width: 12
         height: 7
       spriteId: 363bea7bd4329364c8a1728b044e939f
-    - name: BladeTrapFaster_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -397,7 +397,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: c28570ae8b906074296162927142e40a
-    - name: BladeTrapFaster_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -406,7 +406,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: acb2e6d80173ccc4abea91a9f18f809e
-    - name: BladeTrapFaster_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -415,7 +415,7 @@ ScriptedImporter:
         width: 10
         height: 7
       spriteId: 3135b16bf6b51f34cbcfcfeac450cbb1
-    - name: BladeTrapFaster_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -424,7 +424,7 @@ ScriptedImporter:
         width: 14
         height: 7
       spriteId: 99e79a5a1a4a41b40aeecb58fa2d461d
-    - name: BladeTrapFaster_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -433,7 +433,7 @@ ScriptedImporter:
         width: 14
         height: 7
       spriteId: 2e2b557602bc2ff4da6167a26bafadab
-    - name: BladeTrapFaster_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -442,7 +442,7 @@ ScriptedImporter:
         width: 10
         height: 7
       spriteId: cf0e9dfaa829ac54dbde3c07072f30d1
-    - name: BladeTrapFaster_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -451,7 +451,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: 5a0172034e04d74438c9fc96cdc12922
-    - name: BladeTrapFaster_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -460,7 +460,7 @@ ScriptedImporter:
         width: 8
         height: 7
       spriteId: 99dbabb0edb28a44e97ceb30bf468366
-    - name: BladeTrapFaster_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -469,7 +469,7 @@ ScriptedImporter:
         width: 12
         height: 7
       spriteId: 005e73bf094b15340a55aea8c9d95742
-    - name: BladeTrapFaster_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
