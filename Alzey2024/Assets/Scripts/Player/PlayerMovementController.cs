@@ -116,6 +116,7 @@ namespace Player {
             gameManager = GameManager.Instance;
             EventManager.OnPlayerHurt += OnPlayerHurt;
             EventManager.OnPlayerRecovered += OnPlayerRecovered;
+            EventManager.OnPlayerDied += OnPlayerDied;
         }
 
         private void Update() {
@@ -213,7 +214,13 @@ namespace Player {
         /// </summary>
         private void OnPlayerRecovered() {
             blockControls = false;
-            
+        }
+
+        /// <summary>
+        /// Triggered when the player died
+        /// </summary>
+        private void OnPlayerDied() {
+            blockControls = true;
         }
 
         private void OnDrawGizmosSelected() {

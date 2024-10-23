@@ -24,12 +24,14 @@ namespace Player {
         [SerializeField, Tooltip("Time until sleep animation is played")]
         private float sleepTimer = 2.5f;
 
+        private GameManager gameManager;
         private float initialAlpha;
         private float timeUntilSleep;
 
         private const float VELOCITY_MIN = 0.01f;
 
         private void Start() {
+            gameManager = GameManager.Instance;
             initialAlpha = spriteRenderer.color.a;
 
             EventManager.OnPlayerHurt += TriggerHurtAnimation;
@@ -91,6 +93,10 @@ namespace Player {
 
         private void OnPlayerDied() {
             animator.SetBool("Die", true);
+        }
+
+        private void OnDeathAnimationFinished() {
+            gameManager.EndGameAfterAnimation();
         }
     }
 }

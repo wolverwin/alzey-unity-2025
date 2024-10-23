@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -30,6 +29,9 @@ namespace Manager {
                 return baseHealth;
             }
         }
+
+        [SerializeField, Tooltip("Ends the game after the death animation has played")]
+        private bool endGameAfterAnimation;
 
         /// <summary>
         /// The current damage of the player
@@ -96,6 +98,12 @@ namespace Manager {
             } 
         }
 
+        public bool IsPlayerDead {
+            get {
+                return damage >= baseHealth;
+            }
+        }
+
         private void Awake() {
             instance = this;
         }
@@ -158,12 +166,23 @@ namespace Manager {
         }
 
         /// <summary>
+        /// Ends the game after an animation has played
+        /// </summary>
+        public void EndGameAfterAnimation() {
+            Time.timeScale = 0;
+            uiManager?.ShowLoseScreen();
+        }
+
+        /// <summary>
         /// Ends the game
         /// </summary>
         private void EndGame() {
             EventManager.InvokeOnPlayerDied();
-            Time.timeScale = 0;
-            uiManager?.ShowLoseScreen();
+
+            if (!endGameAfterAnimation) {
+                Time.timeScale = 0;
+                uiManager?.ShowLoseScreen();
+            }
         }
     }
 }

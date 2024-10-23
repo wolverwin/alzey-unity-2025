@@ -28,10 +28,12 @@ namespace Player {
         [SerializeField, Tooltip("If true, the damage is taken when hitting a trigger, instead of a collider")]
         private bool useTrigger;
 
+        private GameManager gameManager;
         private float hurtTimer;
         private float invincibleTimer;
 
         private void Start() {
+            gameManager = GameManager.Instance;
             EventManager.OnPlayerHurt += HurtPlayer;
         }
 
@@ -57,14 +59,14 @@ namespace Player {
         /// Adds the given damage to the player damage
         /// </summary>
         private void HurtPlayer(Vector3 source) {
-            GameManager.Instance.Damage += damagePerHurt;
+            gameManager.Damage += damagePerHurt;
             hurtTimer = hurtTime;
             invincibleTimer = invincibleTime;
             EventManager.InvokeOnPlayerInvincible();
         }
 
         private void OnCollisionStay2D(Collision2D collision) {
-            if (useTrigger) {
+            if (useTrigger || gameManager.IsPlayerDead) {
                 return;
             }
 
@@ -74,7 +76,7 @@ namespace Player {
         }
 
         private void OnTriggerStay2D(Collider2D collision) {
-            if (!useTrigger) {
+            if (!useTrigger || gameManager.IsPlayerDead) {
                 return;
             }
 
