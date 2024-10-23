@@ -24,6 +24,12 @@ namespace Player {
         [SerializeField]
         private float jumpForce = 200;
 
+        /// <summary>
+        /// Whether to anticipate a jump while holding down space, or not
+        /// </summary>
+        [SerializeField]
+        private bool anticipateJump;
+
         [Header("GroundCheck")]
         /// <summary>
         /// Transform to check if the player is grounded
@@ -126,8 +132,19 @@ namespace Player {
             if (!blockControls && (gameManager == null || !gameManager.GamePaused)) {
                 horizontalMovement = Input.GetAxisRaw("Horizontal");
 
-                if (Input.GetButtonDown("Jump")) {
-                    jump = true;
+
+                if (anticipateJump) {
+                    if (Input.GetButtonDown("Jump")) {
+                        EventManager.InvokeOnJumpAnticipation();
+                    }
+
+                    if (Input.GetButtonUp("Jump")) {
+                        jump = true;
+                    }
+                } else {
+                    if (Input.GetButtonDown("Jump")) {
+                        jump = true;
+                    }
                 }
             }
 
@@ -152,6 +169,7 @@ namespace Player {
 
             if (grounded && !onWall) {
                 body.AddForce(new Vector2(0, jumpForce));
+                EventManager.InvokeOnJumpExecuted();
             }
 
             jump = false;

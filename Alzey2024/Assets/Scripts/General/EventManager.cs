@@ -85,5 +85,25 @@ namespace Manager {
         public static void InvokeOnPlayerDied() {
             OnPlayerDied?.Invoke();
         }
+
+        public static event Action OnJumpAnticipation;
+
+        /// <summary>
+        /// Invokes the OnJumpAnticipation event
+        /// </summary>
+        public static void InvokeOnJumpAnticipation()
+        {
+            OnJumpAnticipation?.Invoke();
+        }
+
+        public static event Action OnJumpExecuted;
+
+        /// <summary>
+        /// Invokes the OnJumpExecuted event
+        /// </summary>
+        public static void InvokeOnJumpExecuted()
+        {
+            OnJumpExecuted?.Invoke();
+        }
     }
 }

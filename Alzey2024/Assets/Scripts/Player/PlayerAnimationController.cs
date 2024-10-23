@@ -39,6 +39,8 @@ namespace Player {
             EventManager.OnPlayerInvincible += OnPlayerInvincible;
             EventManager.OnPlayerNotInvincible += OnPlayerNotInvincible;
             EventManager.OnPlayerDied += OnPlayerDied;
+            EventManager.OnJumpAnticipation += OnJumpAnticipation;
+            EventManager.OnJumpExecuted += OnJumpExecuted;
         }
 
         private void Update() {
@@ -89,6 +91,14 @@ namespace Player {
             Color spriteColor = spriteRenderer.color;
             spriteColor.a = initialAlpha;
             spriteRenderer.color = spriteColor;
+        }
+
+        private void OnJumpAnticipation() {
+            animator.SetBool("AnticipateJump", true);
+        }
+
+        private void OnJumpExecuted() {
+            animator.SetBool("AnticipateJump", false);
         }
 
         private void OnPlayerDied() {
