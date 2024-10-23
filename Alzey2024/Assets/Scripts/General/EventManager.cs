@@ -14,6 +14,9 @@ namespace Manager {
             OnCharacterFlip = null;
             OnRequirementsFulfilled = null;
             OnPlayerDied = null;
+            OnJumpAnticipation = null;
+            OnJumpExecuted = null;
+
         }
 
         /// <summary>

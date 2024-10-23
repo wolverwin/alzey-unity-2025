@@ -4769,7 +4769,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   live: {fileID: 4716637498633073653, guid: ed9abeba2c8e53d47aa66818200d80d8, type: 3}
-  lostLive: {fileID: 5725499195494681374, guid: 7470b6cf7acfa064b8ef2ccfd9f9f67f, type: 3}
+  lostLiveSprite: {fileID: 0}
+  animated: 0
+  animationParameter: LostLive
 --- !u!114 &1324871119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5807,6 +5809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHealth: 3
+  endGameAfterAnimation: 0
 --- !u!4 &1761515507
 Transform:
   m_ObjectHideFlags: 0

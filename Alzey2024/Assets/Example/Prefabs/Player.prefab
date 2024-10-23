@@ -243,6 +243,7 @@ MonoBehaviour:
   body: {fileID: 4772425909285463759}
   speed: 40
   jumpForce: 600
+  anticipateJump: 0
   groundCheck: {fileID: 4840369698857459535}
   groundCheckSize: {x: 0.72, y: 0.07}
   whatIsGround:
@@ -288,6 +289,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 5328762776987280062}
   animator: {fileID: 8773148201714591137}
   invincibleAlpha: 0.5
+  useSleepAnimation: 0
   sleepTimer: 2.5
 --- !u!114 &-8231837391341849690
 MonoBehaviour:
