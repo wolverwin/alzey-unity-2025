@@ -22,12 +22,12 @@ namespace Manager {
         /// <summary>
         /// Event triggered when the Player gets hurt
         /// </summary>
-        public static event Action<Vector3> OnPlayerHurt;
+        public static event Action<GameObject> OnPlayerHurt;
 
         /// <summary>
         /// Invokes the OnPlayerHurt event
         /// </summary>
-        public static void InvokeOnPlayerHurt(Vector3 source) {
+        public static void InvokeOnPlayerHurt(GameObject source) {
             OnPlayerHurt?.Invoke(source);
         }
 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2468440930511297865}
   - component: {fileID: 3013579170368586307}
   - component: {fileID: 1106694085744622627}
+  - component: {fileID: 4477699248094961784}
   m_Layer: 6
   m_Name: BladeTrap
   m_TagString: Trap
@@ -198,3 +199,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.96722734, y: 0.4229703}
   m_EdgeRadius: 0
+--- !u!114 &4477699248094961784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157784420104643985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93010866f6d201749b202e24dd636353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2468440930511297865}
+  damage: 1

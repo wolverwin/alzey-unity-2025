@@ -216,9 +216,9 @@ namespace Player {
         /// <summary>
         /// Triggered when the player gets hurt
         /// </summary>
-        private void OnPlayerHurt(Vector3 source) {
+        private void OnPlayerHurt(GameObject source) {
 
-            Vector3 away = (transform.position - source).normalized * damageJumpForce;
+            Vector3 away = (transform.position - source.transform.position).normalized * damageJumpForce;
             Vector2 force = new Vector2(away.x, away.y);
 
             // Make the player jump away when getting hurt

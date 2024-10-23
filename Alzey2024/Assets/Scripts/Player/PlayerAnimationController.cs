@@ -73,7 +73,7 @@ namespace Player {
             animator.SetBool("Falling", isFalling);
         }
 
-        private void TriggerHurtAnimation(Vector3 source) {
+        private void TriggerHurtAnimation(GameObject source) {
             animator.SetBool("Hurt", true);
         }
 

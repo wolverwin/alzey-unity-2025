@@ -1,15 +1,9 @@
 using Manager;
+using Trap;
 using UnityEngine;
 
 namespace Player {
     public class PlayerDamageController : MonoBehaviour {
-
-        /// <summary>
-        /// The damage the player gets when hurt once
-        /// </summary>
-        [SerializeField]
-        private int damagePerHurt = 1;
-
         /// <summary>
         /// The time the player can't move for in seconds after getting hurt
         /// </summary>
@@ -58,8 +52,10 @@ namespace Player {
         /// <summary>
         /// Adds the given damage to the player damage
         /// </summary>
-        private void HurtPlayer(Vector3 source) {
-            gameManager.Damage += damagePerHurt;
+        private void HurtPlayer(GameObject source) {
+            TrapController trapController = source.GetComponent<TrapController>();
+            gameManager.Damage += trapController.Damage;
+            trapController.TriggerHitAnimation();
             hurtTimer = hurtTime;
             invincibleTimer = invincibleTime;
             EventManager.InvokeOnPlayerInvincible();
@@ -71,7 +67,7 @@ namespace Player {
             }
 
             if (invincibleTimer <= 0 && collision.gameObject.CompareTag("Trap")) {
-                EventManager.InvokeOnPlayerHurt(collision.transform.position);
+                EventManager.InvokeOnPlayerHurt(collision.gameObject);
             }
         }
 
@@ -81,7 +77,7 @@ namespace Player {
             }
 
             if (invincibleTimer <= 0 && collision.gameObject.CompareTag("Trap")) {
-                EventManager.InvokeOnPlayerHurt(collision.transform.position);
+                EventManager.InvokeOnPlayerHurt(collision.gameObject);
             }
         }
     }
