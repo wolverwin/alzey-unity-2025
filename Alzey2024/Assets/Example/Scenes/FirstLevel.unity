@@ -1028,7 +1028,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.616068, y: -6, z: -10}
+  m_LocalPosition: {x: -6.0064964, y: -6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4223,7 +4223,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   live: {fileID: 4716637498633073653, guid: ed9abeba2c8e53d47aa66818200d80d8, type: 3}
-  lostLive: {fileID: 5725499195494681374, guid: 7470b6cf7acfa064b8ef2ccfd9f9f67f, type: 3}
+  lostLiveSprite: {fileID: 0}
+  animated: 1
+  animationParameter: LostLive
 --- !u!114 &1324871119
 MonoBehaviour:
   m_ObjectHideFlags: 0

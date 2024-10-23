@@ -10,7 +10,14 @@ namespace UI {
         private GameObject live;
 
         [SerializeField]
-        private GameObject lostLive;
+        private Sprite lostLiveSprite;
+
+        [SerializeField, Tooltip("If the progress should be animated. If set to true, animationParameter must be set!")]
+        private bool animated;
+
+        [SerializeField, Tooltip("The parameter to set for the animation. Only relevant if animated is true.")]
+        private string animationParameter = "LostLive";
+
         private GameManager gameManager;
         private int liveCount;
         private List<GameObject> instantiatedLives;
@@ -50,11 +57,21 @@ namespace UI {
                         return;
                     }
 
+                    if (animated) {
+                        Animator animator = instantiatedLive.GetComponent<Animator>();
+                        animator.SetBool(animationParameter, true);
+                    } else {
+                        Image image = instantiatedLive.GetComponent<Image>();
+                        image.sprite = lostLiveSprite;
+                    }
+
+                    /*
                     Destroy(instantiatedLive);
 
                     GameObject lostLive = Instantiate(this.lostLive, transform);
                     lostLive.transform.SetSiblingIndex(liveIndex);
                     instantiatedLives[i] = lostLive;
+                    */
                 }
             } else {
 

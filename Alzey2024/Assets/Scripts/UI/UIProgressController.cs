@@ -17,8 +17,8 @@ namespace UI {
         private bool animated;
 
         [SerializeField, Tooltip("The parameter to set for the animation. Only relevant if animated is true.")]
-
         private string animationParameter = "FillGlass";
+
         private GameManager gameManager;
         private int itemCount;
         private List<GameObject> instantiatedItems;
