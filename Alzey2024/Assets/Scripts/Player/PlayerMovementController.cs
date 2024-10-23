@@ -1,4 +1,5 @@
 using Manager;
+using UnityEditor;
 using UnityEngine;
 
 namespace Player {
@@ -37,11 +38,15 @@ namespace Player {
         [SerializeField]
         private Transform groundCheck;
 
+        public Transform GroundCheck { get { return groundCheck; } }
+
         /// <summary>
         /// The size of the ground check box to check for
         /// </summary>
         [SerializeField]
         private Vector2 groundCheckSize;
+
+        public Vector2 GroundCheckSize { get { return groundCheckSize; } }
 
         /// <summary>
         /// Detmermines what is ground
@@ -244,6 +249,8 @@ namespace Player {
         private void OnDrawGizmosSelected() {
             Gizmos.color = Color.white;
             Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
+
+            groundCheck.position = Handles.PositionHandle(groundCheck.position, Quaternion.identity);
         }
     }
 }
