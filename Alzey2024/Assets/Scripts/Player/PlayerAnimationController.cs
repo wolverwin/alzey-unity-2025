@@ -1,4 +1,5 @@
 using Manager;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Player {
@@ -16,6 +17,9 @@ namespace Player {
 
         [SerializeField, Range(0, 1)]
         private float invincibleAlpha = 0.5f;
+
+        [SerializeField]
+        private bool useSleepAnimation;
 
         [SerializeField, Tooltip("Time until sleep animation is played")]
         private float sleepTimer = 2.5f;
@@ -38,7 +42,7 @@ namespace Player {
         private void Update() {
             Vector2 velocity = body.velocity;
 
-            if ((velocity.x > VELOCITY_MIN || velocity.x < -VELOCITY_MIN) || (velocity.y > VELOCITY_MIN || velocity.y < -VELOCITY_MIN)) {
+            if (!useSleepAnimation || ((velocity.x > VELOCITY_MIN || velocity.x < -VELOCITY_MIN) || (velocity.y > VELOCITY_MIN || velocity.y < -VELOCITY_MIN))) {
                 timeUntilSleep = 0;
             } else {
                 timeUntilSleep += Time.deltaTime;
