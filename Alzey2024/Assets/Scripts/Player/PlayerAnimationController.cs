@@ -16,7 +16,14 @@ namespace Player {
 
         [SerializeField, Range(0, 1)]
         private float invincibleAlpha = 0.5f;
+
+        [SerializeField, Tooltip("Time until sleep animation is played")]
+        private float sleepTimer = 2.5f;
+
         private float initialAlpha;
+        private float timeUntilSleep;
+
+        private const float VELOCITY_MIN = 0.01f;
 
         private void Start() {
             initialAlpha = spriteRenderer.color.a;
@@ -29,7 +36,21 @@ namespace Player {
         }
 
         private void Update() {
-            animator.SetFloat("Speed", Mathf.Abs(body.velocity.x));
+            Vector2 velocity = body.velocity;
+
+            if ((velocity.x > VELOCITY_MIN || velocity.x < -VELOCITY_MIN) || (velocity.y > VELOCITY_MIN || velocity.y < -VELOCITY_MIN)) {
+                timeUntilSleep = 0;
+            } else {
+                timeUntilSleep += Time.deltaTime;
+            }
+
+            if (timeUntilSleep >= sleepTimer) {
+                animator.SetBool("Sleep", true);
+                return;
+            }
+
+            animator.SetBool("Sleep", false);
+            animator.SetFloat("Speed", Mathf.Abs(velocity.x));
 
             bool isJumping = false;
             bool isFalling = false;

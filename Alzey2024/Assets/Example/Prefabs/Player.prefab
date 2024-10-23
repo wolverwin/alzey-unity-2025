@@ -288,6 +288,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 5328762776987280062}
   animator: {fileID: 8773148201714591137}
   invincibleAlpha: 0.5
+  sleepTimer: 2.5
 --- !u!114 &-8231837391341849690
 MonoBehaviour:
   m_ObjectHideFlags: 0
