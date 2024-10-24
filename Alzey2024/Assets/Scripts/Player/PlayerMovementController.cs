@@ -134,6 +134,8 @@ namespace Player {
             DoGroundCheck();
             ApplyFallGravity();
 
+            horizontalMovement = 0;
+
             if (!blockControls && (gameManager == null || !gameManager.GamePaused)) {
                 horizontalMovement = Input.GetAxisRaw("Horizontal");
 
