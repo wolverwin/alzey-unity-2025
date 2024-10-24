@@ -46,7 +46,7 @@ namespace UI {
             }
 
             if (damageDelta > 0) {
-                for (int i = liveCount - 1 - currentDamage; i >= liveCount - newDamage; i--) {
+                for (int i = liveCount - 1 - currentDamage; i >= liveCount - newDamage && i >= 0; i--) {
                     GameObject instantiatedLive = instantiatedLives[i];
 
                     int liveIndex = instantiatedLive.transform.GetSiblingIndex();// GetGameObjectIndex(transform, instantiatedLife);
@@ -73,8 +73,6 @@ namespace UI {
                     instantiatedLives[i] = lostLive;
                     */
                 }
-            } else {
-
             }
 
             currentDamage = newDamage;

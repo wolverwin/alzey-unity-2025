@@ -62,7 +62,16 @@ namespace Player {
         }
 
         private void OnCollisionStay2D(Collision2D collision) {
-            if (useTrigger || gameManager.IsPlayerDead) {
+            if (gameManager.IsPlayerDead) {
+                return;
+            }
+
+            if (collision.gameObject.CompareTag("DeathPlane")) {
+                EventManager.InvokeOnPlayerDied();
+                return;
+            }
+
+            if (useTrigger) {
                 return;
             }
 
