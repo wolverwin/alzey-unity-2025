@@ -30,6 +30,12 @@ namespace Manager {
             }
         }
 
+        public int CurrentHealth {
+            get {
+                return baseHealth - damage;
+            }
+        }
+
         [SerializeField, Tooltip("Ends the game after the death animation has played")]
         private bool endGameAfterAnimation;
 
@@ -46,8 +52,8 @@ namespace Manager {
                 damage = value;
                 uiManager?.UpdateUI();
 
-                if (damage >= baseHealth) { 
-                    EndGame();
+                if (damage >= baseHealth) {
+                    EventManager.InvokeOnPlayerDied();
                 }
             }
         }
@@ -111,6 +117,8 @@ namespace Manager {
         private void Start() {
             EventManager.Reset();
             uiManager = UIManager.Instance;
+
+            EventManager.OnPlayerDied += EndGame;
 
             Time.timeScale = 1;
         }
@@ -177,8 +185,6 @@ namespace Manager {
         /// Ends the game
         /// </summary>
         private void EndGame() {
-            EventManager.InvokeOnPlayerDied();
-
             if (!endGameAfterAnimation) {
                 Time.timeScale = 0;
                 uiManager?.ShowLoseScreen();
