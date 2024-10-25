@@ -248,11 +248,13 @@ namespace Player {
             blockControls = true;
         }
 
+#if UNITY_EDITOR
         private void OnDrawGizmosSelected() {
             Gizmos.color = Color.white;
             Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
 
             groundCheck.position = Handles.PositionHandle(groundCheck.position, Quaternion.identity);
         }
+#endif
     }
 }
