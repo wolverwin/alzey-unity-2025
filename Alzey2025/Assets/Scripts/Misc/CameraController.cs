@@ -1,21 +1,21 @@
-using Cinemachine;
 using Manager;
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace Misc {
     public class CameraController : MonoBehaviour {
         [SerializeField]
-        private CinemachineVirtualCamera virtualCamera;
+        private CinemachineVirtualCameraBase virtualCamera;
 
         private void Start() {
             EventManager.OnCharacterFlip += FlipView;
         }
 
         private void FlipView() {
-            CinemachineFramingTransposer framingTransposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
-            Vector3 offset = framingTransposer.m_TrackedObjectOffset;
+            CinemachinePositionComposer positionComposer = virtualCamera.GetComponent<CinemachinePositionComposer>();
+            Vector3 offset = positionComposer.TargetOffset;
             offset.x *= -1;
-            framingTransposer.m_TrackedObjectOffset = offset;
+            positionComposer.TargetOffset = offset;
         }
     }
 }
