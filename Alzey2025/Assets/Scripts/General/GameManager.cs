@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 namespace Manager {
     public class GameManager : MonoBehaviour {
@@ -110,6 +112,8 @@ namespace Manager {
             }
         }
 
+        private InputAction pauseAction;
+        
         private void Awake() {
             instance = this;
         }
@@ -117,14 +121,16 @@ namespace Manager {
         private void Start() {
             EventManager.Reset();
             uiManager = UIManager.Instance;
-
+            pauseAction = InputSystem.actions.FindAction("Cancel");
+            
             EventManager.OnPlayerDied += EndGame;
 
             Time.timeScale = 1;
         }
 
         private void Update() {
-            if (Input.GetButtonDown("Cancel")) {
+            
+            if (pauseAction.WasPressedThisFrame()) {
                 gamePaused = !gamePaused;
                 uiManager?.TogglePauseMenu();
 
@@ -139,22 +145,23 @@ namespace Manager {
         /// <summary>
         /// Reloads the current scene
         /// </summary>
-        public void Reload() {
+        public static void Reload() {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         /// <summary>
         /// Restarts the game from the first level
         /// </summary>
-        public void Restart() {
+        public static void Restart() {
             SceneManager.LoadScene(0);
         }
 
         /// <summary>
         /// Exits the game
         /// </summary>
-        public void Exit() {
+        public static void Exit() {
             Application.Quit();
+            Debug.Log("Triggered application quit!");
         }
 
         /// <summary>

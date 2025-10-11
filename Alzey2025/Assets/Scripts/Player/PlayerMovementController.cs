@@ -1,6 +1,7 @@
 using Manager;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Player {
     public class PlayerMovementController : MonoBehaviour {
@@ -75,6 +76,16 @@ namespace Player {
         private float damageJumpForce = 200;
 
         /// <summary>
+        /// The movement action for this player instance
+        /// </summary>
+        private InputAction moveAction;
+
+        /// <summary>
+        /// The jump action for this player instance
+        /// </summary>
+        private InputAction jumpAction;
+
+        /// <summary>
         /// The horizontal movement from the input system
         /// </summary>
         private float horizontalMovement;
@@ -113,6 +124,10 @@ namespace Player {
         /// The current velocity of the player
         /// </summary>
         private Vector2 currentVelocity = Vector2.zero;
+
+        /// <summary>
+        /// A reference to the GameManager used by this game
+        /// </summary>
         private GameManager gameManager;
 
         /// <summary>
@@ -125,6 +140,8 @@ namespace Player {
         private void Start() {
             baseGravity = body.gravityScale;
             gameManager = GameManager.Instance;
+            moveAction = InputSystem.actions.FindAction("Move");
+            jumpAction = InputSystem.actions.FindAction("Jump");
             EventManager.OnPlayerHurt += OnPlayerHurt;
             EventManager.OnPlayerRecovered += OnPlayerRecovered;
             EventManager.OnPlayerDied += OnPlayerDied;
@@ -137,19 +154,18 @@ namespace Player {
             horizontalMovement = 0;
 
             if (!blockControls && (gameManager == null || !gameManager.GamePaused)) {
-                horizontalMovement = Input.GetAxisRaw("Horizontal");
-
+                horizontalMovement = moveAction.ReadValue<Vector2>().x;
 
                 if (anticipateJump) {
-                    if (Input.GetButtonDown("Jump")) {
+                    if (jumpAction.WasPressedThisFrame()) {
                         EventManager.InvokeOnJumpAnticipation();
                     }
 
-                    if (Input.GetButtonUp("Jump")) {
+                    if (jumpAction.WasReleasedThisFrame()) {
                         jump = true;
                     }
                 } else {
-                    if (Input.GetButtonDown("Jump")) {
+                    if (jumpAction.WasPressedThisFrame()) {
                         jump = true;
                     }
                 }
