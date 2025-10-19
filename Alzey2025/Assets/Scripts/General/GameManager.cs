@@ -1,11 +1,9 @@
-using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace Manager {
     public class GameManager : MonoBehaviour {
-
         private static GameManager instance;
 
         public static GameManager Instance {
@@ -15,7 +13,7 @@ namespace Manager {
                 }
 
                 return instance;
-            } 
+            }
         }
 
         private UIManager uiManager;
@@ -26,17 +24,9 @@ namespace Manager {
         [SerializeField]
         private int baseHealth = 3;
 
-        public int BaseHealth {
-            get {
-                return baseHealth;
-            }
-        }
+        public int BaseHealth => baseHealth;
 
-        public int CurrentHealth {
-            get {
-                return baseHealth - damage;
-            }
-        }
+        public int CurrentHealth => baseHealth - damage;
 
         [SerializeField, Tooltip("Ends the game after the death animation has played")]
         private bool endGameAfterAnimation;
@@ -47,9 +37,7 @@ namespace Manager {
         private int damage;
 
         public int Damage {
-            get {
-                return damage;
-            }
+            get => damage;
             set {
                 damage = value;
                 uiManager?.UpdateUI();
@@ -66,11 +54,9 @@ namespace Manager {
         private int itemsCollected;
 
         public int ItemsCollected {
-            get {
-                return itemsCollected;
-            }
+            get => itemsCollected;
 
-            set { 
+            set {
                 itemsCollected = value;
                 uiManager?.UpdateUI();
 
@@ -86,13 +72,9 @@ namespace Manager {
         private int itemCount;
 
         public int ItemCount {
-            get {
-                return itemCount;
-            }
+            get => itemCount;
 
-            set {
-                itemCount = value;
-            }
+            set => itemCount = value;
         }
 
         /// <summary>
@@ -100,20 +82,12 @@ namespace Manager {
         /// </summary>
         private bool gamePaused;
 
-        public bool GamePaused {
-            get {
-                return gamePaused; 
-            } 
-        }
+        public bool GamePaused => gamePaused;
 
-        public bool IsPlayerDead {
-            get {
-                return damage >= baseHealth;
-            }
-        }
+        public bool IsPlayerDead => damage >= baseHealth;
 
         private InputAction pauseAction;
-        
+
         private void Awake() {
             instance = this;
         }
@@ -122,24 +96,21 @@ namespace Manager {
             EventManager.Reset();
             uiManager = UIManager.Instance;
             pauseAction = InputSystem.actions.FindAction("Cancel");
-            
+
             EventManager.OnPlayerDied += EndGame;
 
             Time.timeScale = 1;
         }
 
         private void Update() {
-            
-            if (pauseAction.WasPressedThisFrame()) {
-                gamePaused = !gamePaused;
-                uiManager?.TogglePauseMenu();
-
-                if (gamePaused) {
-                    Time.timeScale = 0;
-                } else {
-                    Time.timeScale = 1;
-                }
+            if (!pauseAction.WasPressedThisFrame()) {
+                return;
             }
+
+            gamePaused = !gamePaused;
+            uiManager?.TogglePauseMenu();
+
+            Time.timeScale = gamePaused ? 0 : 1;
         }
 
         /// <summary>
@@ -192,11 +163,12 @@ namespace Manager {
         /// Ends the game
         /// </summary>
         private void EndGame() {
-            if (!endGameAfterAnimation) {
-                Time.timeScale = 0;
-                uiManager?.ShowLoseScreen();
+            if (endGameAfterAnimation) {
+                return;
             }
+
+            Time.timeScale = 0;
+            uiManager?.ShowLoseScreen();
         }
     }
 }
-

@@ -1,12 +1,10 @@
-using Manager;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using Manager;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace UI {
     public class UIProgressController : UIController {
-
         [SerializeField]
         private GameObject progressItem;
 
@@ -27,6 +25,15 @@ namespace UI {
         private void Start() {
             gameManager = GameManager.Instance;
             itemCount = gameManager.ItemCount;
+
+            // Destroy all children used for preview purposes
+            int childCount = transform.childCount;
+
+            for (int i = 0; i < childCount; i++) {
+                Transform child = transform.GetChild(i);
+                Destroy(child.gameObject);
+            }
+
             instantiatedItems = new List<GameObject>();
 
             for (int i = 0; i < itemCount; i++) {

@@ -246,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 4772425909285463759}
   speed: 40
-  jumpForce: 600
+  jumpForce: 12
   anticipateJump: 0
   groundCheck: {fileID: 4840369698857459535}
   groundCheckSize: {x: 0.72, y: 0.07}
@@ -296,6 +296,13 @@ MonoBehaviour:
   invincibleAlpha: 0.5
   useSleepAnimation: 0
   sleepTimer: 2.5
+  speedParameter: Speed
+  jumpingParameter: Jumping
+  anticipateJumpParameter: AnticipateJump
+  fallingParameter: Falling
+  hurtParameter: Hurt
+  sleepParameter: Sleep
+  dieParameter: Die
 --- !u!114 &-8231837391341849690
 MonoBehaviour:
   m_ObjectHideFlags: 0

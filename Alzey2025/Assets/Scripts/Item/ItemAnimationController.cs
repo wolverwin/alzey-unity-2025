@@ -2,7 +2,6 @@ using UnityEngine;
 
 namespace Item {
     public class ItemAnimationController : MonoBehaviour {
-
         [SerializeField]
         private ItemController controller;
 

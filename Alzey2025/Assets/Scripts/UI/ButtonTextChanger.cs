@@ -4,18 +4,17 @@ using UnityEngine.EventSystems;
 
 namespace UI {
     public class ButtonTextChanger : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler {
+        [SerializeField]
+        private TMP_Text text;
 
         [SerializeField]
-        TMP_Text text;
+        private Color hoverColor = Color.white;
 
         [SerializeField]
-        Color hoverColor = Color.white;
+        private Color clickColor = Color.white;
 
-        [SerializeField]
-        Color clickColor = Color.white;
-
-        Color initialColor;
-        bool hovering;
+        private Color initialColor;
+        private bool hovering;
 
         private void Start() {
             initialColor = text.color;

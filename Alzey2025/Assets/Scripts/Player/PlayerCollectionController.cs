@@ -7,11 +7,11 @@ namespace Player {
         private GameManager gameManager;
 
         private void Start() {
-            gameManager = GameManager.Instance;    
+            gameManager = GameManager.Instance;
         }
 
         private void OnTriggerEnter2D(Collider2D collision) {
-            if (collision.tag != "Collectable") {
+            if (!collision.CompareTag("Collectable")) {
                 return;
             }
 

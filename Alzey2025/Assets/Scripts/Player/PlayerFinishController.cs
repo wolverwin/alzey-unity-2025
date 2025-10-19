@@ -10,7 +10,7 @@ namespace Player {
         }
 
         private void OnTriggerEnter2D(Collider2D collision) {
-            if (collision.tag != "Finish") {
+            if (!collision.CompareTag("Finish")) {
                 return;
             }
 

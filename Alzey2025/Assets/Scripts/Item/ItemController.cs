@@ -2,14 +2,12 @@ using UnityEngine;
 
 namespace Item {
     public class ItemController : MonoBehaviour {
-
         [SerializeField]
         private ItemAnimationController animationController;
+
         private bool collected;
 
-        public bool Collected {
-            get { return collected; } 
-        }
+        public bool Collected => collected;
 
         /// <summary>
         /// Triggered when player collects this item
@@ -27,4 +25,3 @@ namespace Item {
         }
     }
 }
-

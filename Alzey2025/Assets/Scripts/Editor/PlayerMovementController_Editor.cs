@@ -9,6 +9,10 @@ namespace Editor_Custom {
         private void OnSceneGUI() {
             PlayerMovementController movementController = (PlayerMovementController)target;
 
+            if (!movementController.GroundCheck) {
+                return;
+            }
+
             movementController.GroundCheck.position = Handles.PositionHandle(movementController.GroundCheck.position, Quaternion.identity);
         }
 

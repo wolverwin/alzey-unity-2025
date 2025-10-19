@@ -24,6 +24,7 @@ namespace Manager {
 
         [SerializeField]
         private GameObject loseScreen;
+
         private List<UIController> uiController;
 
         private void Awake() {
@@ -44,7 +45,11 @@ namespace Manager {
         /// Shows the pause menu
         /// </summary>
         public void TogglePauseMenu() {
-            if (winScreen.activeSelf || loseScreen.activeSelf) {
+            if (!pauseMenu) {
+                return;
+            }
+
+            if (winScreen && loseScreen && (winScreen.activeSelf || loseScreen.activeSelf)) {
                 return;
             }
 
@@ -55,14 +60,14 @@ namespace Manager {
         /// Shows the win screen to restart the game
         /// </summary>
         public void ShowWinScreen() {
-            winScreen.SetActive(true);
+            winScreen?.SetActive(true);
         }
 
         /// <summary>
         /// Shows the lose screen to restart the game
         /// </summary>
         public void ShowLoseScreen() {
-            loseScreen.SetActive(true);
+            loseScreen?.SetActive(true);
         }
     }
 }

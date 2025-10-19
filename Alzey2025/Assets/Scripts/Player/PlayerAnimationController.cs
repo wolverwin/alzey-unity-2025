@@ -1,11 +1,9 @@
 using Manager;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Player {
     [RequireComponent(typeof(Animator))]
     public class PlayerAnimationController : MonoBehaviour {
-
         [SerializeField]
         private Rigidbody2D body;
 
@@ -24,9 +22,31 @@ namespace Player {
         [SerializeField, Tooltip("Time until sleep animation is played")]
         private float sleepTimer = 2.5f;
 
+        [Header("Animation Parameters"), SerializeField]
+        private string speedParameter = "Speed";
+
+        [SerializeField]
+        private string jumpingParameter = "Jumping";
+
+        [SerializeField]
+        private string anticipateJumpParameter = "AnticipateJump";
+
+        [SerializeField]
+        private string fallingParameter = "Falling";
+
+        [SerializeField]
+        private string hurtParameter = "Hurt";
+
+        [SerializeField]
+        private string sleepParameter = "Sleep";
+
+        [SerializeField]
+        private string dieParameter = "Die";
+
         private GameManager gameManager;
         private float initialAlpha;
         private float timeUntilSleep;
+
 
         private const float VELOCITY_MIN = 0.01f;
 
@@ -46,19 +66,23 @@ namespace Player {
         private void Update() {
             Vector2 velocity = body.linearVelocity;
 
-            if (!useSleepAnimation || ((velocity.x > VELOCITY_MIN || velocity.x < -VELOCITY_MIN) || (velocity.y > VELOCITY_MIN || velocity.y < -VELOCITY_MIN))) {
+            if (
+                !useSleepAnimation ||
+                velocity.x > VELOCITY_MIN || velocity.x < -VELOCITY_MIN ||
+                velocity.y > VELOCITY_MIN || velocity.y < -VELOCITY_MIN
+            ) {
                 timeUntilSleep = 0;
             } else {
                 timeUntilSleep += Time.deltaTime;
             }
 
             if (timeUntilSleep >= sleepTimer) {
-                animator.SetBool("Sleep", true);
+                animator.SetBool(sleepParameter, true);
                 return;
             }
 
-            animator.SetBool("Sleep", false);
-            animator.SetFloat("Speed", Mathf.Abs(velocity.x));
+            animator.SetBool(sleepParameter, false);
+            animator.SetFloat(speedParameter, Mathf.Abs(velocity.x));
 
             bool isJumping = false;
             bool isFalling = false;
@@ -69,16 +93,16 @@ namespace Player {
                 isFalling = true;
             }
 
-            animator.SetBool("Jumping", isJumping);
-            animator.SetBool("Falling", isFalling);
+            animator.SetBool(jumpingParameter, isJumping);
+            animator.SetBool(fallingParameter, isFalling);
         }
 
         private void TriggerHurtAnimation(GameObject source) {
-            animator.SetBool("Hurt", true);
+            animator.SetBool(hurtParameter, true);
         }
 
         private void StopHurtAnimation() {
-            animator.SetBool("Hurt", false);
+            animator.SetBool(hurtParameter, false);
         }
 
         private void OnPlayerInvincible() {
@@ -94,15 +118,15 @@ namespace Player {
         }
 
         private void OnJumpAnticipation() {
-            animator.SetBool("AnticipateJump", true);
+            animator.SetBool(anticipateJumpParameter, true);
         }
 
         private void OnJumpExecuted() {
-            animator.SetBool("AnticipateJump", false);
+            animator.SetBool(anticipateJumpParameter, false);
         }
 
         private void OnPlayerDied() {
-            animator.SetBool("Die", true);
+            animator.SetBool(dieParameter, true);
         }
 
         private void OnDeathAnimationFinished() {

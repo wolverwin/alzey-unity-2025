@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace Finish {
     public class FinishController : MonoBehaviour {
-
         [SerializeField]
         private Collider2D finishCollider;
 

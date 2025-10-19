@@ -2,12 +2,12 @@ using UnityEngine;
 
 namespace Misc {
     public class ParallaxController : MonoBehaviour {
-
         /// <summary>
         /// How fast the background moves relative to the camera. 0 = moves with cam || 1 won't move
         /// </summary>
         [SerializeField, Range(0, 1), Tooltip("0 moves with cam || 1 won't move")]
         private float modifier;
+
         private Camera cam;
         private float startPosition;
         private float width;

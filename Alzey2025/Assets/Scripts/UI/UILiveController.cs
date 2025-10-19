@@ -1,11 +1,10 @@
-using Manager;
 using System.Collections.Generic;
+using Manager;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace UI {
     public class UILiveController : UIController {
-
         [SerializeField]
         private GameObject live;
 
@@ -22,13 +21,19 @@ namespace UI {
         private int liveCount;
         private List<GameObject> instantiatedLives;
         private int currentDamage;
-        private HorizontalLayoutGroup horizontalLayoutGroup;
 
         private void Start() {
             gameManager = GameManager.Instance;
             liveCount = gameManager.BaseHealth;
             currentDamage = 0;
-            horizontalLayoutGroup = GetComponent<HorizontalLayoutGroup>();
+
+            // Destroy all children used for preview purposes
+            int childCount = transform.childCount;
+
+            for (int i = 0; i < childCount; i++) {
+                Transform child = transform.GetChild(i);
+                Destroy(child.gameObject);
+            }
 
             instantiatedLives = new List<GameObject>();
 
@@ -49,7 +54,7 @@ namespace UI {
                 for (int i = liveCount - 1 - currentDamage; i >= liveCount - newDamage && i >= 0; i--) {
                     GameObject instantiatedLive = instantiatedLives[i];
 
-                    int liveIndex = instantiatedLive.transform.GetSiblingIndex();// GetGameObjectIndex(transform, instantiatedLife);
+                    int liveIndex = instantiatedLive.transform.GetSiblingIndex(); // GetGameObjectIndex(transform, instantiatedLife);
 
                     if (liveIndex < 0) {
                         Debug.LogError("GameObject search returned -1. This should not happen!");
@@ -64,36 +69,10 @@ namespace UI {
                         Image image = instantiatedLive.GetComponent<Image>();
                         image.sprite = lostLiveSprite;
                     }
-
-                    /*
-                    Destroy(instantiatedLive);
-
-                    GameObject lostLive = Instantiate(this.lostLive, transform);
-                    lostLive.transform.SetSiblingIndex(liveIndex);
-                    instantiatedLives[i] = lostLive;
-                    */
                 }
             }
 
             currentDamage = newDamage;
-        }
-
-        /// <summary>
-        /// Searches the given target as child of the given parent and returns the index of the child
-        /// </summary>
-        /// <param name="parent"></param>
-        /// <param name="target"></param>
-        /// <returns></returns>
-        private int GetGameObjectIndex(Transform parent, GameObject target) {
-            int childCount = transform.childCount;
-
-            for (int i = 0; i < childCount; i++) {
-                if (parent.GetChild(i) == target.gameObject) {
-                    return i;
-                }
-            }
-
-            return -1;
         }
     }
 }

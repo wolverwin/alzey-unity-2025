@@ -16,7 +16,6 @@ namespace Manager {
             OnPlayerDied = null;
             OnJumpAnticipation = null;
             OnJumpExecuted = null;
-
         }
 
         /// <summary>
@@ -94,8 +93,7 @@ namespace Manager {
         /// <summary>
         /// Invokes the OnJumpAnticipation event
         /// </summary>
-        public static void InvokeOnJumpAnticipation()
-        {
+        public static void InvokeOnJumpAnticipation() {
             OnJumpAnticipation?.Invoke();
         }
 
@@ -104,8 +102,7 @@ namespace Manager {
         /// <summary>
         /// Invokes the OnJumpExecuted event
         /// </summary>
-        public static void InvokeOnJumpExecuted()
-        {
+        public static void InvokeOnJumpExecuted() {
             OnJumpExecuted?.Invoke();
         }
     }
