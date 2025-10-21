@@ -105,5 +105,23 @@ namespace Manager {
         public static void InvokeOnJumpExecuted() {
             OnJumpExecuted?.Invoke();
         }
+
+        public static event Action OnSprintStart;
+
+        /// <summary>
+        /// Invokes the OnSprintStart event
+        /// </summary>
+        public static void InvokeOnSprintStart() {
+            OnSprintStart?.Invoke();
+        }
+        
+        public static event Action OnSprintEnd;
+        
+        /// <summary>
+        /// Invokes the OnSprintStart event
+        /// </summary>
+        public static void InvokeOnSprintEnd() {
+            OnSprintEnd?.Invoke();
+        }
     }
 }
