@@ -27,6 +27,9 @@ namespace Player {
 
         [SerializeField]
         private string jumpingParameter = "Jumping";
+        
+        [SerializeField]
+        private string sprintingParameter = "Sprinting";
 
         [SerializeField]
         private string anticipateJumpParameter = "AnticipateJump";
@@ -61,6 +64,8 @@ namespace Player {
             EventManager.OnPlayerDied += OnPlayerDied;
             EventManager.OnJumpAnticipation += OnJumpAnticipation;
             EventManager.OnJumpExecuted += OnJumpExecuted;
+            EventManager.OnSprintStart += () => OnSprinting(true);
+            EventManager.OnSprintEnd += () => OnSprinting(false);
         }
 
         private void Update() {
@@ -131,6 +136,10 @@ namespace Player {
 
         private void OnDeathAnimationFinished() {
             gameManager.EndGameAfterAnimation();
+        }
+
+        private void OnSprinting(bool isSprinting) {
+            animator.SetBool(sprintingParameter, isSprinting);
         }
     }
 }

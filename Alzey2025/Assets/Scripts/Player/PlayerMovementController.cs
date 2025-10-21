@@ -18,6 +18,18 @@ namespace Player {
         private float speed = 20;
 
         /// <summary>
+        /// Whether sprinting is allowed or not
+        /// </summary>
+        [SerializeField]
+        private bool allowSprinting;
+        
+        /// <summary>
+        /// The sprinting speed of the player
+        /// </summary>
+        [SerializeField]
+        private float sprintSpeed = 20;
+
+        /// <summary>
         /// The force applied to the player when jumping
         /// </summary>
         [Header("Jumping"), SerializeField]
@@ -80,6 +92,11 @@ namespace Player {
         private InputAction jumpAction;
 
         /// <summary>
+        /// The sprint action of this player instance
+        /// </summary>
+        private InputAction sprintAction;
+
+        /// <summary>
         /// The horizontal movement from the input system
         /// </summary>
         private float horizontalMovement;
@@ -88,6 +105,11 @@ namespace Player {
         /// If true, all controls are blocked
         /// </summary>
         private bool blockControls;
+
+        /// <summary>
+        /// If true, the player is currently sprinting
+        /// </summary>
+        private bool sprint;
 
         /// <summary>
         /// Whether the player should jump in the next fixed update or not
@@ -136,6 +158,7 @@ namespace Player {
             gameManager = GameManager.Instance;
             moveAction = InputSystem.actions.FindAction("Move");
             jumpAction = InputSystem.actions.FindAction("Jump");
+            sprintAction = InputSystem.actions.FindAction("Sprint");
             EventManager.OnPlayerHurt += OnPlayerHurt;
             EventManager.OnPlayerRecovered += OnPlayerRecovered;
             EventManager.OnPlayerDied += OnPlayerDied;
@@ -149,6 +172,16 @@ namespace Player {
 
             if (!blockControls && (gameManager == null || !gameManager.GamePaused)) {
                 horizontalMovement = moveAction.ReadValue<Vector2>().x;
+
+                if (allowSprinting) {
+                    sprint = sprintAction.IsPressed();
+
+                    if (sprintAction.WasPressedThisFrame()) {
+                        EventManager.InvokeOnSprintStart();
+                    } else if (sprintAction.WasReleasedThisFrame()) {
+                        EventManager.InvokeOnSprintEnd();
+                    }
+                }
 
                 if (anticipateJump) {
                     if (jumpAction.WasPressedThisFrame()) {
@@ -172,9 +205,10 @@ namespace Player {
         }
 
         private void FixedUpdate() {
+            float targetSpeed = sprint ? sprintSpeed : speed;
+            
             // Calculate new velocity and apply it to the rigidbody
-            Vector2 targetVelocity =
-                new Vector2(horizontalMovement * MOVEMENT_MULTIPLIER * speed * Time.fixedDeltaTime, body.linearVelocityY);
+            Vector2 targetVelocity = new (horizontalMovement * MOVEMENT_MULTIPLIER * targetSpeed * Time.fixedDeltaTime, body.linearVelocityY);
             body.linearVelocity = Vector2.SmoothDamp(body.linearVelocity, targetVelocity, ref currentVelocity, 0.05f);
 
             Jump();
