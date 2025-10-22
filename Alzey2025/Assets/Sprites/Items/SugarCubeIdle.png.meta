@@ -1,43 +1,46 @@
 fileFormatVersion: 2
-guid: b5b2dee407d946747b17cb49005e0f9e
+guid: 699989df23022e847872f1644ef5a5a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2753597471096352698
-    second: Environment_0
+      213: 8384679338471231706
+    second: SugarCubeIdle_0
   - first:
-      213: -446867404522521166
-    second: Environment_1
+      213: -4822687481026044102
+    second: SugarCubeIdle_1
   - first:
-      213: 5089713165793692188
-    second: Environment_2
+      213: 1129052236508942022
+    second: SugarCubeIdle_2
   - first:
-      213: 2713915087196460949
-    second: Environment_3
+      213: -3908096775687231226
+    second: SugarCubeIdle_3
   - first:
-      213: -4500993874483076431
-    second: Environment_4
+      213: -5555965318033554147
+    second: SugarCubeIdle_4
   - first:
-      213: 3411122762858479303
-    second: Environment_5
+      213: -8905076299472111965
+    second: SugarCubeIdle_5
   - first:
-      213: -6081611462039590206
-    second: Environment_6
+      213: -1780812835722594725
+    second: SugarCubeIdle_6
   - first:
-      213: -5508807443964245338
-    second: Environment_7
+      213: -8897284751348258184
+    second: SugarCubeIdle_7
   - first:
-      213: 3914693016000628799
-    second: Environment_8
+      213: 5783096789029189529
+    second: SugarCubeIdle_8
   - first:
-      213: 3062189330265537062
-    second: Environment_9
+      213: -5949940148816044622
+    second: SugarCubeIdle_9
   - first:
-      213: 2748799819732492174
-    second: Environment_10
+      213: 7649843655713179495
+    second: SugarCubeIdle_10
   - first:
-      213: -2994877863233710035
-    second: Environment_11
+      213: -8592308198921088079
+    second: SugarCubeIdle_11
+  - first:
+      213: -5900959541226409873
+    second: SugarCubeIdle_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -133,315 +136,287 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Environment_0
+      name: SugarCubeIdle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 64053e070b149c9d0800000000000000
-      internalID: -2753597471096352698
+      spriteID: ad092253f6d5c5470800000000000000
+      internalID: 8384679338471231706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Environment_1
+      name: SugarCubeIdle_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f18b6a94f521db0800000000000000
+      internalID: -4822687481026044102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SugarCubeIdle_2
       rect:
         serializedVersion: 2
         x: 32
-        y: 144
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 2bdfbb396786cc9f0800000000000000
-      internalID: -446867404522521166
+      spriteID: 6cec9f1f6033baf00800000000000000
+      internalID: 1129052236508942022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Environment_2
+      name: SugarCubeIdle_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609205140b6a3c9c0800000000000000
+      internalID: -3908096775687231226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SugarCubeIdle_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 144
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: c1a03c7682b42a640800000000000000
-      internalID: 5089713165793692188
+      spriteID: d154832eafe35e2b0800000000000000
+      internalID: -5555965318033554147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Environment_3
+      name: SugarCubeIdle_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
+        x: 80
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 5971be29463c9a520800000000000000
-      internalID: 2713915087196460949
+      spriteID: 3a6f6386940da6480800000000000000
+      internalID: -8905076299472111965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Environment_4
+      name: SugarCubeIdle_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
+        x: 96
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 1b22a3f1be14981c0800000000000000
-      internalID: -4500993874483076431
+      spriteID: b567c4b39284947e0800000000000000
+      internalID: -1780812835722594725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Environment_5
+      name: SugarCubeIdle_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 112
+        x: 112
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 7cebd65741eb65f20800000000000000
-      internalID: 3411122762858479303
+      spriteID: 87a236298ae768480800000000000000
+      internalID: -8897284751348258184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Environment_6
+      name: SugarCubeIdle_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
+        x: 128
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 2caaf27d896c99ba0800000000000000
-      internalID: -6081611462039590206
+      spriteID: 99779c3b3efa14050800000000000000
+      internalID: 5783096789029189529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Environment_7
+      name: SugarCubeIdle_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 80
+        x: 144
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 6aacb7e01d8cc83b0800000000000000
-      internalID: -5508807443964245338
+      spriteID: 2bd1cf275f09d6da0800000000000000
+      internalID: -5949940148816044622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Environment_8
+      name: SugarCubeIdle_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 80
+        x: 160
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: f388b6f9e88c35630800000000000000
-      internalID: 3914693016000628799
+      spriteID: 7674f063644b92a60800000000000000
+      internalID: 7649843655713179495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Environment_9
+      name: SugarCubeIdle_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 176
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -5}
-        - {x: -6, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 62af771c8f41f7a20800000000000000
-      internalID: 3062189330265537062
+      spriteID: 1b3d1a2973df1c880800000000000000
+      internalID: -8592308198921088079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Environment_10
+      name: SugarCubeIdle_12
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 192
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: e8f10dd4fd2b52620800000000000000
-      internalID: 2748799819732492174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Environment_11
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape:
-      - - {x: 8, y: -6}
-        - {x: 8, y: 8}
-        - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 6, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: d281640737e0076d0800000000000000
-      internalID: -2994877863233710035
+      spriteID: f607f37df849b1ea0800000000000000
+      internalID: -5900959541226409873
       vertices: []
       indices: 
       edges: []
@@ -450,7 +425,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4db4f10c820b1fa41ac84b36ec047b5c
+    spriteID: b35db76fb66b5f2469619dba2be810e8
     internalID: 0
     vertices: []
     indices: 
@@ -460,18 +435,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Environment_0: -2753597471096352698
-      Environment_1: -446867404522521166
-      Environment_10: 2748799819732492174
-      Environment_11: -2994877863233710035
-      Environment_2: 5089713165793692188
-      Environment_3: 2713915087196460949
-      Environment_4: -4500993874483076431
-      Environment_5: 3411122762858479303
-      Environment_6: -6081611462039590206
-      Environment_7: -5508807443964245338
-      Environment_8: 3914693016000628799
-      Environment_9: 3062189330265537062
+      SugarCubeIdle_0: 8384679338471231706
+      SugarCubeIdle_1: -4822687481026044102
+      SugarCubeIdle_10: 7649843655713179495
+      SugarCubeIdle_11: -8592308198921088079
+      SugarCubeIdle_12: -5900959541226409873
+      SugarCubeIdle_2: 1129052236508942022
+      SugarCubeIdle_3: -3908096775687231226
+      SugarCubeIdle_4: -5555965318033554147
+      SugarCubeIdle_5: -8905076299472111965
+      SugarCubeIdle_6: -1780812835722594725
+      SugarCubeIdle_7: -8897284751348258184
+      SugarCubeIdle_8: 5783096789029189529
+      SugarCubeIdle_9: -5949940148816044622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
