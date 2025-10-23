@@ -27,7 +27,7 @@ namespace Player {
 
         [SerializeField]
         private string jumpingParameter = "Jumping";
-        
+
         [SerializeField]
         private string sprintingParameter = "Sprinting";
 
@@ -49,7 +49,7 @@ namespace Player {
         private GameManager gameManager;
         private float initialAlpha;
         private float timeUntilSleep;
-
+        private bool anticipateJump;
 
         private const float VELOCITY_MIN = 0.01f;
 
@@ -86,7 +86,10 @@ namespace Player {
                 return;
             }
 
-            animator.SetBool(sleepParameter, false);
+            if (useSleepAnimation) {
+                animator.SetBool(sleepParameter, false);
+            }
+
             animator.SetFloat(speedParameter, Mathf.Abs(velocity.x));
 
             bool isJumping = false;
@@ -124,9 +127,14 @@ namespace Player {
 
         private void OnJumpAnticipation() {
             animator.SetBool(anticipateJumpParameter, true);
+            anticipateJump = true;
         }
 
         private void OnJumpExecuted() {
+            if (!anticipateJump) {
+                return;
+            }
+
             animator.SetBool(anticipateJumpParameter, false);
         }
 

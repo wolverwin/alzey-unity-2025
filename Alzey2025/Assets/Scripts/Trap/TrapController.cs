@@ -20,5 +20,12 @@ namespace Trap {
 
             animator.SetTrigger("Hit");
         }
+
+        /// <summary>
+        /// Destroys this trap
+        /// </summary>
+        public void DestroyTrap() {
+            Destroy(gameObject);
+        }
     }
 }
